@@ -1,0 +1,66 @@
+<RASMapper>
+  <Version>2.0.13611</Version>
+  <Geometries Checked="True" Expanded="True" TopNode="True">
+    <Layer Name="Lower Sacramento River &amp; Yolo Bypass" Type="RASGeometry" Checked="True" Expanded="True" Filename=".\YoloBypass_2016.g01.hdf">
+      <Layer Name="Rivers" Type="RASRiver" Checked="True">
+        <Pen A="255" R="0" G="0" B="255" Width="1" />
+      </Layer>
+      <Layer Name="XS" Type="RASXS" Checked="True">
+        <Pen A="255" R="0" G="128" B="0" Width="1" />
+      </Layer>
+      <Layer Name="Storage Areas" Type="RASStorageArea" />
+      <Layer Name="2D Flow Areas" Type="RASD2FlowArea" Checked="True" Selected="True">
+        <PlotOption Name="Mesh Edges" Value="True" />
+        <PointSymbol Type="1" Size="4" pA="255" pR="0" pG="0" pB="255" bA="255" bR="255" bG="255" bB="255" />
+        <Pen A="255" R="0" G="0" B="0" Width="1" />
+        <Brush A="64" R="173" G="216" B="230" />
+      </Layer>
+      <Layer Name="..." Type="RASMoreLayers" />
+    </Layer>
+  </Geometries>
+  <Results />
+  <MapLayers Checked="True" Expanded="True">
+    <Layer Name="InternalGauges" Type="ShapefileLayer" Checked="True" Filename="..\..\Data\Shapefiles_Feature_Classes\Internal Gages\InternalGauges.shp">
+      <PointSymbol Type="1" Size="4" pA="255" pR="0" pG="0" pB="255" bA="255" bR="255" bG="255" bB="255" />
+    </Layer>
+    <Layer Name="LandCover_EntireInput" Type="LandCover" Filename="..\..\Data\Shapefiles_Feature_Classes\April2016LandCover\LandCover_EntireInput.tif">
+      <Alpha>128</Alpha>
+      <ResampleMethod>near</ResampleMethod>
+      <ColorByteMap Alpha="128" Values="53,19,74,64,65,27,13,22,36,28,24,52,43,44,21,56,10,15,113,37,86,16,78,18,109,105,30,91,98,99,75,104,81,76,73,79,42,97,11,46,89,116,7,54,92,49,57,25,118,50,6,63,111,29,48,51,106,34,26,61,62,38,70,90,5,35,117,101,114,69,59,45,55,94,58,110,87,83,84,102,95,3,80,100,33,115,66,112,20,67,120,39,96,23,93,107,88,68,31,119,85,103,108,17,82,8,12,60,40,32,14,1,2,47,4,9,72,71,77" Colors="-2144166596,-2138539009,-2146697971,-2147399974,-2132109808,-2145665471,-2138403944,-2135865172,-2134820207,-2135645999,-2144366894,-2137313597,-2145913848,-2135767092,-2137995680,-2140255433,-2147315510,-2139004056,-2131721899,-2138061248,-2140317859,-2143563080,-2146939288,-2142436406,-2143758397,-2134171519,-2142481681,-2141605616,-2146980310,-2140558419,-2140305619,-2134424464,-2140187148,-2136512772,-2133871220,-2130753397,-2136660896,-2133638285,-2142169946,-2142489820,-2138202205,-2135171204,-2137231214,-2142020661,-2138200852,-2131588356,-2138830747,-2137078906,-2142463676,-2135263696,-2134236383,-2133845305,-2141645611,-2146409769,-2131209528,-2137700706,-2138611831,-2136356821,-2134970405,-2145620410,-2143821062,-2141025992,-2136359542,-2145085322,-2144963419,-2138200719,-2134985133,-2136591849,-2136596390,-2131422933,-2132001371,-2138122112,-2132961592,-2138051448,-2146213178,-2146205100,-2138689463,-2140578121,-2131521105,-2132558999,-2132888660,-2141243301,-2133813348,-2145079281,-2136461622,-2134207793,-2142202979,-2147061792,-2132704546,-2131911866,-2133788197,-2141212360,-2133019606,-2140454166,-2135400065,-2143633360,-2131941121,-2132831705,-2134124732,-2134147659,-2139298820,-2141891658,-2144122500,-2137854242,-2136611503,-2135798259,-2141149247,-2136080269,-2142768793,-2135714854,-2131553994,-2139820450,-2131860979,-2134374793,-2135729351,-2145305939,-2133452407,-2143917354,-2131440157" />
+    </Layer>
+  </MapLayers>
+  <Terrains Checked="True" Expanded="True">
+    <Layer Name="Thomas_modifications_June_2017" Type="TerrainLayer" Checked="True" Filename="..\..\Data\Rasters\Thomas_Modifications_June_2017\Thomas_modifications_June_2017.hdf">
+      <SurfaceFill Alpha="255" Colors="-10039894,-256,-16744448,-23296,-7667712,-5952982,-8355712,-1286" Values="-35.5703125,2.10895039598695,5.795601505694,7.82962617861561,10.3920413296239,13.6172736978348,19.9182267684722,87.53125" Stretched="True" />
+      <Contour On="False" Interval="5" Color="-16777216" />
+      <HillShade On="True" Azimuth="315" Zenith="45" ZFactor="3" />
+      <SurfaceFill Alpha="255" Colors="-10039894,-256,-16744448,-23296,-7667712,-5952982,-8355712,-1286" Values="-35.5703125,2.10895039598695,5.795601505694,7.82962617861561,10.3920413296239,13.6172736978348,19.9182267684722,87.53125" Stretched="True" />
+      <Surface On="True" />
+    </Layer>
+  </Terrains>
+  <CurrentView>
+    <MaxX>706481.031270718</MaxX>
+    <MinX>564717.62481016</MinX>
+    <MaxY>4325447.55248325</MaxY>
+    <MinY>4189991.41622539</MinY>
+  </CurrentView>
+  <VelocitySettings>
+    <Density>1.5</Density>
+    <Lifetime>100</Lifetime>
+    <Radius>0.75</Radius>
+    <Method>2</Method>
+    <Timestep>1</Timestep>
+    <StaticColor>Black</StaticColor>
+  </VelocitySettings>
+  <AnimationSettings>
+    <DelayTimer>0</DelayTimer>
+  </AnimationSettings>
+  <ProjectSettings>
+    <Units>SI Units</Units>
+  </ProjectSettings>
+  <CurrentSettings>
+    <Folders>
+      <AddDataFolder>..\..\Data\Shapefiles_Feature_Classes\April2016LandCover</AddDataFolder>
+    </Folders>
+  </CurrentSettings>
+</RASMapper>

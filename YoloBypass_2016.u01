@@ -1,0 +1,472 @@
+Flow Title=1997 Flood Event
+Program Version=5.03
+Use Restart= 0 
+Initial Flow Loc=American        ,A               ,22.195  ,773.05
+Initial Flow Loc=American        ,A               ,0.191   ,101.289
+Initial Flow Loc=Barker Slough   ,Small A         ,2687.425,1
+Initial Flow Loc=Cache Slough    ,US to Hass      ,2275.979,1.425
+Initial Flow Loc=Cache Slough    ,Hass to 2D      ,19883.95,2
+Initial Flow Loc=CalhounCut      ,AA              ,2400.371,4.32
+Initial Flow Loc=DeepWaterShipCha,A               ,34556.03,1
+Initial Flow Loc=DeltaCross      ,DCC             ,1071.35 ,1
+Initial Flow Loc=Elk Slough      ,To Sutter       ,15304.38,1
+Initial Flow Loc=FeatherRiver    ,A               ,46191.73,1042.768
+Initial Flow Loc=FeatherRiver    ,A               ,12736   ,600
+Initial Flow Loc=Georgianna      ,Georg to Sac    ,1718.89 ,1
+Initial Flow Loc=HassSlough      ,To Cache        ,4682.563,1
+Initial Flow Loc=Lindsey         ,Barker to 2D    ,9850.279,11.185
+Initial Flow Loc=Miner Slough    ,Sutter to 2D    ,10647.88,82.3375
+Initial Flow Loc=NCC             ,A               ,3509.071,144.869
+Initial Flow Loc=Sacramento      ,Feather to NCC  ,1442.33 ,322.68
+Initial Flow Loc=Sacramento      ,NCC to American ,106947.8,341.8
+Initial Flow Loc=Sacramento      ,NCC to American ,80400   ,357.1525
+Initial Flow Loc=Sacramento      ,Amer to Sutt Sl ,74027.38,372.505
+Initial Flow Loc=Sacramento      ,Sutt to Steam   ,31893.07,450.415
+Initial Flow Loc=Sacramento      ,Steam to DCC    ,29339.4 ,254.52
+Initial Flow Loc=Sacramento      ,DCC to Georg    ,20776.3 ,318.4895
+Initial Flow Loc=Sacramento      ,Georg to 2D     ,19783.05,347.3295
+Initial Flow Loc=Sacramento      ,Wilkins - A     ,60311.51,736.238
+Initial Flow Loc=Steamboat Slough,Sac to Sutter   ,18671.58,203.56
+Initial Flow Loc=Steamboat Slough,Sutter to 2D    ,11481.18,915.46
+Initial Flow Loc=Sutter Slough   ,Sac to Elk      ,10711.84,574.74
+Initial Flow Loc=Sutter Slough   ,Elk to Miner    ,9830.021,516.38
+Initial Flow Loc=Sutter Slough   ,Miner to Steam  ,3768.972,303.9
+Initial Storage Elev=Sutter Bypass   ,4.874
+Initial Storage Elev=Yolo Bypass     ,0.6218
+Boundary Location=NCC             ,A               ,3509.071,        ,                ,                ,                ,                
+Interval=1HOUR
+Flow Hydrograph= 0 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/NATOMAS CROSS CANAL/4_NCC/FLOW/01OCT1996/1HOUR/ESTIMATED/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=Sacramento      ,Wilkins - A     ,60311.51,        ,                ,                ,                ,                
+Interval=1HOUR
+Flow Hydrograph= 0 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/SACRAMENTO R BL WILKINS SLOUGH/4_WLK/FLOW/01OCT1996/1HOUR/USGS/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=Sacramento      ,Wilkins - A     ,15797.7*,        ,                ,                ,                ,                
+Interval=1HOUR
+Lateral Inflow Hydrograph= 0 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/KNIGHTS LANDING OUTFALL GATES/4_KLOG/FLOW/01DEC1996/1HOUR/DWR_WDL + ESTIMATED/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=Barker Slough   ,Small A         ,2687.425,        ,                ,                ,                ,                
+Interval=1HOUR
+Flow Hydrograph= 0 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/CAMPBELL LAKE/3_CAMP/FLOW/01OCT1996/1HOUR/ESTIMATED/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=DeepWaterShipCha,A               ,42771.89,        ,                ,                ,                ,                
+Interval=1YEAR
+Flow Hydrograph= 2 
+       1       1
+DSS Path=
+Use DSS=False
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=Barker Slough   ,Small A         ,2574.70*,        ,                ,                ,                ,                
+Interval=1DAY
+Lateral Inflow Hydrograph= 481 
+       1     .76     .52     .28     .04     -.2    -.44    -.68    -.68    -.68
+    -.68    -.68    -.68    -.68    -.68    -.68    -.68    -.68    -.68    -.68
+    -.68    -.68    -.68    -.68    -.68    -.57    -.57    -.57    -.57    -.57
+    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57
+    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.65
+    -.65    -.65    -.65    -.65    -.65    -.65    -.65    -.65    -.65    -.65
+    -.65    -.65    -.65    -.65    -.65    -.65    -.65    -.65    -.65    -.65
+    -.65    -.65    -.65    -.54    -.54    -.54    -.54    -.54    -.54    -.54
+    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54
+    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.51    -.51    -.51
+    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51
+    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51
+    -.51    -.25    -.25    -.25    -.25    -.25    -.25    -.25    -.25    -.25
+    -.25    -.25    -.25    -.25    -.25    -.25    -.25    -.25    -.25    -.25
+    -.25    -.25    -.25    -.25    -.25    -.31    -.31    -.31    -.31    -.31
+    -.31    -.31    -.31    -.31    -.31    -.31    -.31    -.31    -.31    -.31
+    -.31    -.31    -.31    -.31    -.31    -.31    -.31    -.31    -.31    -.48
+    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48
+    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48
+    -.48    -.48    -.48     -.4     -.4     -.4     -.4     -.4     -.4     -.4
+     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4
+     -.4     -.4     -.4     -.4     -.4     -.4     -.4    -.54    -.54    -.54
+    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54
+    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54
+    -.54    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48
+    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48
+    -.48    -.48    -.48    -.48    -.48    -.51    -.51    -.51    -.51    -.51
+    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51
+    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51     -.4
+     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4
+     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4
+     -.4     -.4     -.4    -.51    -.51    -.51    -.51    -.51    -.51    -.51
+    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51
+    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51
+    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51
+    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51
+    -.51    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45
+    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45
+    -.45    -.45    -.45    -.45    -.45    -.54    -.54    -.54    -.54    -.54
+    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54
+    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.45
+    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45
+    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45
+    -.45    -.45    -.45    -.57    -.57    -.57    -.57    -.57    -.57    -.57
+    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57
+    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.42    -.42    -.42
+    -.42    -.42    -.42    -.42    -.42    -.42    -.42    -.42    -.42    -.42
+    -.42    -.42    -.42    -.42    -.42    -.42    -.42    -.42    -.42    -.42
+    -.42
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/NORTHBAY AQUEDUCT (EXPORTS)/3_NBAQ/FLOW/01NOV1996/1HOUR/DWR_DAYFLOW/
+Use DSS=False
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=American        ,A               ,1.893   ,        ,                ,                ,                ,                
+Interval=1HOUR
+Lateral Inflow Hydrograph= 0 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/STEELHEAD CREEK/4_SHC/FLOW/01OCT1996/1HOUR/GAUGED + ESTIMATED/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=Sacramento      ,NCC to American ,80400   ,        ,                ,                ,                ,                
+Elev Controlled Gate=Gates 1-6   ,,,0.02032,0.00508,1.829,0,0, 1 
+Elev Controlled Gate Ref=8.382,7.52,Sacramento      ,Amer to Sutt Sl ,73137.26,                
+Elev Controlled Gate Stage Diff=,,                ,                ,        ,                ,                ,                ,        ,                
+Elev Controlled Gate=Gates 7-13  ,,,0.02032,0.00508,1.829,0,0, 1 
+Elev Controlled Gate Ref=8.458,7.537,Sacramento      ,Amer to Sutt Sl ,73137.26,                
+Elev Controlled Gate Stage Diff=,,                ,                ,        ,                ,                ,                ,        ,                
+Elev Controlled Gate=Gates 14-20 ,,,0.02032,0.00508,1.829,0,0, 1 
+Elev Controlled Gate Ref=8.534,7.553,Sacramento      ,Amer to Sutt Sl ,73137.26,                
+Elev Controlled Gate Stage Diff=,,                ,                ,        ,                ,                ,                ,        ,                
+Elev Controlled Gate=Gates 21-27 ,,,0.02032,0.00508,1.829,0,0, 1 
+Elev Controlled Gate Ref=8.611,7.57,Sacramento      ,Amer to Sutt Sl ,73137.26,                
+Elev Controlled Gate Stage Diff=,,                ,                ,        ,                ,                ,                ,        ,                
+Elev Controlled Gate=Gates 28-34 ,,,0.02032,0.00508,1.829,0,0, 1 
+Elev Controlled Gate Ref=8.687,7.587,Sacramento      ,Amer to Sutt Sl ,73137.26,                
+Elev Controlled Gate Stage Diff=,,                ,                ,        ,                ,                ,                ,        ,                
+Elev Controlled Gate=Gates 35-41 ,,,0.02032,0.00508,1.829,0,0, 1 
+Elev Controlled Gate Ref=8.763,7.603,Sacramento      ,Amer to Sutt Sl ,73137.26,                
+Elev Controlled Gate Stage Diff=,,                ,                ,        ,                ,                ,                ,        ,                
+Elev Controlled Gate=Gates 42-48 ,,,0.02032,0.00508,1.829,0,0, 1 
+Elev Controlled Gate Ref=8.839,7.62,Sacramento      ,Amer to Sutt Sl ,73137.26,                
+Elev Controlled Gate Stage Diff=,,                ,                ,        ,                ,                ,                ,        ,                
+Boundary Location=Elk Slough      ,To Sutter       ,15304.38,        ,                ,                ,                ,                
+Interval=1YEAR
+Flow Hydrograph= 2 
+       1       1
+DSS Path=
+Use DSS=False
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Yolo Bypass     ,                ,Rio Vista       
+Interval=1HOUR
+Stage Hydrograph= 0 
+Stage Hydrograph Use Initial Stage=0
+DSS File=15_min all years Rio Vista stage m_NAVD88.dss
+DSS Path=/RIO VISTA/RIO VISTA BRIDGE/STAGE/01SEP1996/15MIN/NAVD_88 (WDL_CDEC)_ MISSING ESTIMATED/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Yolo Bypass     ,                ,Putah Creek     
+Interval=1HOUR
+Flow Hydrograph= 0 
+Flow Hydrograph Slope= 0.00064 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/PUTAH CREEK/2_PUT/FLOW/01OCT1996/1HOUR/ESTIMATED/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Yolo Bypass     ,                ,Willow Slough   
+Interval=1HOUR
+Flow Hydrograph= 0 
+Flow Hydrograph Slope= 0 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/WILLOW SLOUGH BYPASS/2_WSB/FLOW/01OCT1996/1HOUR/ESTIMATED/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Yolo Bypass     ,                ,Cache Creek SB  
+Interval=1HOUR
+Flow Hydrograph= 0 
+Flow Hydrograph Slope= 0 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/CACHE CREEK SETTLING BASIN/2_CCSB_TOTAL/FLOW/01OCT1996/1HOUR/RUN:16-YR_RUN_CCSB_CVFED_TWPOOL/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Yolo Bypass     ,                ,Kinghts Landing 
+Interval=1HOUR
+Flow Hydrograph= 0 
+Flow Hydrograph Slope= 0.00019 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/KNIGHTS LANDING RIDGE CUT/2_KLRC/FLOW/01OCT1996/1HOUR/GAUGED + ESTIMATED/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=CalhounCut      ,AA              ,2400.371,        ,                ,                ,                ,                
+Interval=1HOUR
+Flow Hydrograph= 0 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/CALHOUN CUT/3_CCH/FLOW/01OCT1996/1HOUR/ESTIMATED/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=HassSlough      ,To Cache        ,4682.563,        ,                ,                ,                ,                
+Interval=1YEAR
+Flow Hydrograph= 2 
+       1       1
+DSS Path=
+Use DSS=False
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=HassSlough      ,To Cache        ,3475.33*,        ,                ,                ,                ,                
+Interval=1DAY
+Lateral Inflow Hydrograph= 0 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/HAAS SLOUGH/3_HAAS/FLOW/01OCT1996/1HOUR/ESTIMATED/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=American        ,A               ,22.195  ,        ,                ,                ,                ,                
+Interval=1HOUR
+Flow Hydrograph= 0 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/AMERICAN R/4_AFO/FLOW/01OCT1996/1HOUR/USGS/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=DeltaCross      ,DCC             ,1071.35 ,        ,                ,                ,                ,                
+Interval=1HOUR
+Flow Hydrograph= 1297 
+       1       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0
+DSS Path=
+Use DSS=False
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=Georgianna      ,Georg to Sac    ,1718.89 ,        ,                ,                ,                ,                
+Interval=1HOUR
+Flow Hydrograph= 0 
+Flow Hydrograph QMult=-1 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/DELTA CROSS CHANNEL + GEORGIANA SL. (EXPORTS)/5_XGEO/FLOW/01OCT1996/1HOUR/DWR_DAYFLOW/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=FeatherRiver    ,A               ,46191.73,        ,                ,                ,                ,                
+Interval=1HOUR
+Flow Hydrograph= 0 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/FEATHER R/4_FEA/FLOW/01OCT1996/1HOUR/ESTIMATED/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=DeepWaterShipCha,A               ,34556.03,        ,                ,                ,                ,                
+Interval=1YEAR
+Flow Hydrograph= 2 
+       1       1
+DSS Path=
+Use DSS=False
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Sutter Bypass   ,                ,Tisdale         
+Interval=1HOUR
+Flow Hydrograph= 0 
+Flow Hydrograph Slope= 0.00019 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/SUTTER BYPASS/4_SUT/FLOW/01OCT1996/1HOUR/EST./
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=Cache Slough    ,US to Hass      ,2275.979,        ,                ,                ,                ,                
+Interval=1HOUR
+Flow Hydrograph= 0 
+DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
+DSS Path=/CACHE SLOUGH/CAC/FLOW/01JAN1996/1DAY/ESTIMATED/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
