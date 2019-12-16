@@ -1,6 +1,6 @@
 # HEC-RAS-2D-Yolo-Bypass
 
-![Fremont Spilling](/Modeled_Fremont_Spill.png?raw=true "Fremont Spilling")
+![Fremont Spilling](misc/Modeled_Fremont_Spill.png?raw=true "Fremont Spilling")
 
 This is the location where the model files for the HEC-RAS 2D application on the Yolo Bypass reside. This project was built in **HEC-RAS 5.0.3**.
 
