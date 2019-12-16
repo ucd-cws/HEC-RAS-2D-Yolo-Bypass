@@ -1,140 +1,192 @@
-Flow Title=1997 Flood Event
-Program Version=5.03
+Flow Title=2017 Flood Event NO INIT FLOW cbc
+Program Version=5.07
 Use Restart= 0 
-Initial Flow Loc=American        ,A               ,22.195  ,773.05
-Initial Flow Loc=American        ,A               ,0.191   ,101.289
-Initial Flow Loc=Barker Slough   ,Small A         ,2687.425,1
-Initial Flow Loc=Cache Slough    ,US to Hass      ,2275.979,1.425
-Initial Flow Loc=Cache Slough    ,Hass to 2D      ,19883.95,2
-Initial Flow Loc=CalhounCut      ,AA              ,2400.371,4.32
-Initial Flow Loc=DeepWaterShipCha,A               ,34556.03,1
-Initial Flow Loc=DeltaCross      ,DCC             ,1071.35 ,1
-Initial Flow Loc=Elk Slough      ,To Sutter       ,15304.38,1
-Initial Flow Loc=FeatherRiver    ,A               ,46191.73,1042.768
-Initial Flow Loc=FeatherRiver    ,A               ,12736   ,600
-Initial Flow Loc=Georgianna      ,Georg to Sac    ,1718.89 ,1
-Initial Flow Loc=HassSlough      ,To Cache        ,4682.563,1
-Initial Flow Loc=Lindsey         ,Barker to 2D    ,9850.279,11.185
-Initial Flow Loc=Miner Slough    ,Sutter to 2D    ,10647.88,82.3375
-Initial Flow Loc=NCC             ,A               ,3509.071,144.869
-Initial Flow Loc=Sacramento      ,Feather to NCC  ,1442.33 ,322.68
-Initial Flow Loc=Sacramento      ,NCC to American ,106947.8,341.8
-Initial Flow Loc=Sacramento      ,NCC to American ,80400   ,357.1525
-Initial Flow Loc=Sacramento      ,Amer to Sutt Sl ,74027.38,372.505
-Initial Flow Loc=Sacramento      ,Sutt to Steam   ,31893.07,450.415
-Initial Flow Loc=Sacramento      ,Steam to DCC    ,29339.4 ,254.52
-Initial Flow Loc=Sacramento      ,DCC to Georg    ,20776.3 ,318.4895
-Initial Flow Loc=Sacramento      ,Georg to 2D     ,19783.05,347.3295
-Initial Flow Loc=Sacramento      ,Wilkins - A     ,60311.51,736.238
-Initial Flow Loc=Steamboat Slough,Sac to Sutter   ,18671.58,203.56
-Initial Flow Loc=Steamboat Slough,Sutter to 2D    ,11481.18,915.46
-Initial Flow Loc=Sutter Slough   ,Sac to Elk      ,10711.84,574.74
-Initial Flow Loc=Sutter Slough   ,Elk to Miner    ,9830.021,516.38
-Initial Flow Loc=Sutter Slough   ,Miner to Steam  ,3768.972,303.9
-Initial Storage Elev=Sutter Bypass   ,4.874
-Initial Storage Elev=Yolo Bypass     ,0.6218
-Boundary Location=NCC             ,A               ,3509.071,        ,                ,                ,                ,                
+Restart Filename=YoloBypass_2016.p09.05MAR2009 2400.rst
+Initial Storage Elev=Sutter Bypass   ,6
+Initial Storage Elev=Yolo Bypass     ,2.21
+Boundary Location=NCC             ,A               ,3509.071,        ,                ,                ,                ,                                
 Interval=1HOUR
 Flow Hydrograph= 0 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/NATOMAS CROSS CANAL/4_NCC/FLOW/01OCT1996/1HOUR/ESTIMATED/
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/NATOMAS CROSS/NCC/FLOW/01JAN2016/1DAY/GAUGED+ESTIMATED/
 Use DSS=True
 Use Fixed Start Time=False
 Fixed Start Date/Time=,
 Is Critical Boundary=False
 Critical Boundary Flow=
-Boundary Location=Sacramento      ,Wilkins - A     ,60311.51,        ,                ,                ,                ,                
+Boundary Location=Sacramento      ,Wilkins - A     ,60311.51,        ,                ,                ,                ,                                
 Interval=1HOUR
 Flow Hydrograph= 0 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/SACRAMENTO R BL WILKINS SLOUGH/4_WLK/FLOW/01OCT1996/1HOUR/USGS/
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/SAC RIVER BELOW WILKINS NEAR GRIMES/WILK/FLOW/01SEP2012/1HOUR/USGS/
 Use DSS=True
 Use Fixed Start Time=False
 Fixed Start Date/Time=,
 Is Critical Boundary=False
 Critical Boundary Flow=
-Boundary Location=Sacramento      ,Wilkins - A     ,15797.7*,        ,                ,                ,                ,                
+Boundary Location=Sacramento      ,Wilkins - A     ,15797.7*,        ,                ,                ,                ,                                
 Interval=1HOUR
 Lateral Inflow Hydrograph= 0 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/KNIGHTS LANDING OUTFALL GATES/4_KLOG/FLOW/01DEC1996/1HOUR/DWR_WDL + ESTIMATED/
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/KNIGHTS LANDING RIDGE CUT/KLRC/FLOW/01OCT2012/15MIN/DWR/
 Use DSS=True
 Use Fixed Start Time=False
 Fixed Start Date/Time=,
 Is Critical Boundary=False
 Critical Boundary Flow=
-Boundary Location=Barker Slough   ,Small A         ,2687.425,        ,                ,                ,                ,                
+Boundary Location=Barker Slough   ,Small A         ,2687.425,        ,                ,                ,                ,                                
 Interval=1HOUR
 Flow Hydrograph= 0 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/CAMPBELL LAKE/3_CAMP/FLOW/01OCT1996/1HOUR/ESTIMATED/
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/CAMPBELL LAKE/CAMPBELL/FLOW/01JAN1996/1DAY/ESTIMATED/
 Use DSS=True
 Use Fixed Start Time=False
 Fixed Start Date/Time=,
 Is Critical Boundary=False
 Critical Boundary Flow=
-Boundary Location=DeepWaterShipCha,A               ,42771.89,        ,                ,                ,                ,                
-Interval=1YEAR
-Flow Hydrograph= 2 
-       1       1
-DSS Path=
-Use DSS=False
-Use Fixed Start Time=False
-Fixed Start Date/Time=,
-Is Critical Boundary=False
-Critical Boundary Flow=
-Boundary Location=Barker Slough   ,Small A         ,2574.70*,        ,                ,                ,                ,                
+Boundary Location=Barker Slough   ,Small A         ,2574.70*,        ,                ,                ,                ,                                
 Interval=1DAY
-Lateral Inflow Hydrograph= 481 
-       1     .76     .52     .28     .04     -.2    -.44    -.68    -.68    -.68
-    -.68    -.68    -.68    -.68    -.68    -.68    -.68    -.68    -.68    -.68
-    -.68    -.68    -.68    -.68    -.68    -.57    -.57    -.57    -.57    -.57
-    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57
-    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.65
-    -.65    -.65    -.65    -.65    -.65    -.65    -.65    -.65    -.65    -.65
-    -.65    -.65    -.65    -.65    -.65    -.65    -.65    -.65    -.65    -.65
-    -.65    -.65    -.65    -.54    -.54    -.54    -.54    -.54    -.54    -.54
-    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54
-    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.51    -.51    -.51
-    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51
-    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51
-    -.51    -.25    -.25    -.25    -.25    -.25    -.25    -.25    -.25    -.25
+Lateral Inflow Hydrograph= 1393 
+       1     .63     .25    -.13     -.5    -.88   -1.25   -1.25   -1.25   -1.25
+   -1.25   -1.25   -1.25   -1.25   -1.25   -1.25   -1.25   -1.25   -1.25   -1.25
+   -1.25   -1.25   -1.25   -1.25   -1.25   -1.61   -1.61   -1.61   -1.61   -1.61
+   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61
+   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61    -.62
+    -.62    -.62    -.62    -.62    -.62    -.62    -.62    -.62    -.62    -.62
+    -.62    -.62    -.62    -.62    -.62    -.62    -.62    -.62    -.62    -.62
+    -.62    -.62    -.62    -1.5    -1.5    -1.5    -1.5    -1.5    -1.5    -1.5
+    -1.5    -1.5    -1.5    -1.5    -1.5    -1.5    -1.5    -1.5    -1.5    -1.5
+    -1.5    -1.5    -1.5    -1.5    -1.5    -1.5    -1.5    -.91    -.91    -.91
+    -.91    -.91    -.91    -.91    -.91    -.91    -.91    -.91    -.91    -.91
+    -.91    -.91    -.91    -.91    -.91    -.91    -.91    -.91    -.91    -.91
+    -.91   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61
+   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61
+   -1.61   -1.61   -1.61   -1.61   -1.61   -1.25   -1.25   -1.25   -1.25   -1.25
+   -1.25   -1.25   -1.25   -1.25   -1.25   -1.25   -1.25   -1.25   -1.25   -1.25
+   -1.25   -1.25   -1.25   -1.25   -1.25   -1.25   -1.25   -1.25   -1.25   -1.13
+   -1.13   -1.13   -1.13   -1.13   -1.13   -1.13   -1.13   -1.13   -1.13   -1.13
+   -1.13   -1.13   -1.13   -1.13   -1.13   -1.13   -1.13   -1.13   -1.13   -1.13
+   -1.13   -1.13   -1.13   -1.19   -1.19   -1.19   -1.19   -1.19   -1.19   -1.19
+   -1.19   -1.19   -1.19   -1.19   -1.19   -1.19   -1.19   -1.19   -1.19   -1.19
+   -1.19   -1.19   -1.19   -1.19   -1.19   -1.19   -1.19   -1.33   -1.33   -1.33
+   -1.33   -1.33   -1.33   -1.33   -1.33   -1.33   -1.33   -1.33   -1.33   -1.33
+   -1.33   -1.33   -1.33   -1.33   -1.33   -1.33   -1.33   -1.33   -1.33   -1.33
+   -1.33   -1.42   -1.42   -1.42   -1.42   -1.42   -1.42   -1.42   -1.42   -1.42
+   -1.42   -1.42   -1.42   -1.42   -1.42   -1.42   -1.42   -1.42   -1.42   -1.42
+   -1.42   -1.42   -1.42   -1.42   -1.42   -1.36   -1.36   -1.36   -1.36   -1.36
+   -1.36   -1.36   -1.36   -1.36   -1.36   -1.36   -1.36   -1.36   -1.36   -1.36
+   -1.36   -1.36   -1.36   -1.36   -1.36   -1.36   -1.36   -1.36   -1.36   -1.61
+   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61
+   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61   -1.61
+   -1.61   -1.61   -1.61   -1.76   -1.76   -1.76   -1.76   -1.76   -1.76   -1.76
+   -1.76   -1.76   -1.76   -1.76   -1.76   -1.76   -1.76   -1.76   -1.76   -1.76
+   -1.76   -1.76   -1.76   -1.76   -1.76   -1.76   -1.76   -1.87   -1.87   -1.87
+   -1.87   -1.87   -1.87   -1.87   -1.87   -1.87   -1.87   -1.87   -1.87   -1.87
+   -1.87   -1.87   -1.87   -1.87   -1.87   -1.87   -1.87   -1.87   -1.87   -1.87
+   -1.87   -1.98   -1.98   -1.98   -1.98   -1.98   -1.98   -1.98   -1.98   -1.98
+   -1.98   -1.98   -1.98   -1.98   -1.98   -1.98   -1.98   -1.98   -1.98   -1.98
+   -1.98   -1.98   -1.98   -1.98   -1.98   -1.64   -1.64   -1.64   -1.64   -1.64
+   -1.64   -1.64   -1.64   -1.64   -1.64   -1.64   -1.64   -1.64   -1.64   -1.64
+   -1.64   -1.64   -1.64   -1.64   -1.64   -1.64   -1.64   -1.64   -1.64   -1.16
+   -1.16   -1.16   -1.16   -1.16   -1.16   -1.16   -1.16   -1.16   -1.16   -1.16
+   -1.16   -1.16   -1.16   -1.16   -1.16   -1.16   -1.16   -1.16   -1.16   -1.16
+   -1.16   -1.16   -1.16    -.62    -.62    -.62    -.62    -.62    -.62    -.62
+    -.62    -.62    -.62    -.62    -.62    -.62    -.62    -.62    -.62    -.62
+    -.62    -.62    -.62    -.62    -.62    -.62    -.62    -.23    -.23    -.23
+    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23
+    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23
+    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23
+    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23
+    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23
+    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23
+    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23    -.23     -.2
+     -.2     -.2     -.2     -.2     -.2     -.2     -.2     -.2     -.2     -.2
+     -.2     -.2     -.2     -.2     -.2     -.2     -.2     -.2     -.2     -.2
+     -.2     -.2     -.2    -.14    -.14    -.14    -.14    -.14    -.14    -.14
+    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.14
+    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.25    -.25    -.25
     -.25    -.25    -.25    -.25    -.25    -.25    -.25    -.25    -.25    -.25
-    -.25    -.25    -.25    -.25    -.25    -.31    -.31    -.31    -.31    -.31
-    -.31    -.31    -.31    -.31    -.31    -.31    -.31    -.31    -.31    -.31
-    -.31    -.31    -.31    -.31    -.31    -.31    -.31    -.31    -.31    -.48
-    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48
-    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48
-    -.48    -.48    -.48     -.4     -.4     -.4     -.4     -.4     -.4     -.4
-     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4
-     -.4     -.4     -.4     -.4     -.4     -.4     -.4    -.54    -.54    -.54
-    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54
-    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54
-    -.54    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48
-    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48    -.48
-    -.48    -.48    -.48    -.48    -.48    -.51    -.51    -.51    -.51    -.51
-    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51
-    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51     -.4
-     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4
-     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4     -.4
-     -.4     -.4     -.4    -.51    -.51    -.51    -.51    -.51    -.51    -.51
-    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51
-    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51
-    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51
-    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51    -.51
-    -.51    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45
-    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45
-    -.45    -.45    -.45    -.45    -.45    -.54    -.54    -.54    -.54    -.54
-    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54
-    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.54    -.45
-    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45
-    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45    -.45
-    -.45    -.45    -.45    -.57    -.57    -.57    -.57    -.57    -.57    -.57
-    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.57
-    -.57    -.57    -.57    -.57    -.57    -.57    -.57    -.42    -.42    -.42
+    -.25    -.25    -.25    -.25    -.25    -.25    -.25    -.25    -.25    -.25
+    -.25    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08
+    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08
+    -.08    -.08    -.08    -.08    -.08    -.06    -.06    -.06    -.06    -.06
+    -.06    -.06    -.06    -.06    -.06    -.06    -.06    -.06    -.06    -.06
+    -.06    -.06    -.06    -.06    -.06    -.06    -.06    -.06    -.06       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0    -.42    -.42    -.42    -.42    -.42    -.42    -.42
     -.42    -.42    -.42    -.42    -.42    -.42    -.42    -.42    -.42    -.42
-    -.42    -.42    -.42    -.42    -.42    -.42    -.42    -.42    -.42    -.42
-    -.42
+    -.42    -.42    -.42    -.42    -.42    -.42    -.42    -.14    -.14    -.14
+    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.14
+    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.14
+    -.14    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08
+    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08
+    -.08    -.08    -.08    -.08    -.08       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0    -.11
+    -.11    -.11    -.11    -.11    -.11    -.11    -.11    -.11    -.11    -.11
+    -.11    -.11    -.11    -.11    -.11    -.11    -.11    -.11    -.11    -.11
+    -.11    -.11    -.11    -.03    -.03    -.03    -.03    -.03    -.03    -.03
+    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.03
+    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.11    -.11    -.11
+    -.11    -.11    -.11    -.11    -.11    -.11    -.11    -.11    -.11    -.11
+    -.11    -.11    -.11    -.11    -.11    -.11    -.11    -.11    -.11    -.11
+    -.11    -.06    -.06    -.06    -.06    -.06    -.06    -.06    -.06    -.06
+    -.06    -.06    -.06    -.06    -.06    -.06    -.06    -.06    -.06    -.06
+    -.06    -.06    -.06    -.06    -.06    -.08    -.08    -.08    -.08    -.08
+    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08
+    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.03
+    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.03
+    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.03
+    -.03    -.03    -.03    -.08    -.08    -.08    -.08    -.08    -.08    -.08
+    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.08
+    -.08    -.08    -.08    -.08    -.08    -.08    -.08    -.03    -.03    -.03
+    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.03
+    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.03    -.03
+    -.03       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0    -.14
+    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.14
+    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.14    -.14
+    -.14    -.14    -.14
 DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
 DSS Path=/NORTHBAY AQUEDUCT (EXPORTS)/3_NBAQ/FLOW/01NOV1996/1HOUR/DWR_DAYFLOW/
 Use DSS=False
@@ -142,39 +194,39 @@ Use Fixed Start Time=False
 Fixed Start Date/Time=,
 Is Critical Boundary=False
 Critical Boundary Flow=
-Boundary Location=American        ,A               ,1.893   ,        ,                ,                ,                ,                
+Boundary Location=American        ,A               ,1.893   ,        ,                ,                ,                ,                                
 Interval=1HOUR
 Lateral Inflow Hydrograph= 0 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/STEELHEAD CREEK/4_SHC/FLOW/01OCT1996/1HOUR/GAUGED + ESTIMATED/
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/STEELHEAD CREEK/SHC/FLOW/01JAN2012/1DAY/GAUGED+ESTIMATED/
 Use DSS=True
 Use Fixed Start Time=False
 Fixed Start Date/Time=,
 Is Critical Boundary=False
 Critical Boundary Flow=
-Boundary Location=Sacramento      ,NCC to American ,80400   ,        ,                ,                ,                ,                
+Boundary Location=Sacramento      ,NCC to American ,80400   ,        ,                ,                ,                ,                                
 Elev Controlled Gate=Gates 1-6   ,,,0.02032,0.00508,1.829,0,0, 1 
 Elev Controlled Gate Ref=8.382,7.52,Sacramento      ,Amer to Sutt Sl ,73137.26,                
 Elev Controlled Gate Stage Diff=,,                ,                ,        ,                ,                ,                ,        ,                
 Elev Controlled Gate=Gates 7-13  ,,,0.02032,0.00508,1.829,0,0, 1 
-Elev Controlled Gate Ref=8.458,7.537,Sacramento      ,Amer to Sutt Sl ,73137.26,                
+Elev Controlled Gate Ref=8.447,7.534,Sacramento      ,Amer to Sutt Sl ,73137.26,                
 Elev Controlled Gate Stage Diff=,,                ,                ,        ,                ,                ,                ,        ,                
 Elev Controlled Gate=Gates 14-20 ,,,0.02032,0.00508,1.829,0,0, 1 
-Elev Controlled Gate Ref=8.534,7.553,Sacramento      ,Amer to Sutt Sl ,73137.26,                
+Elev Controlled Gate Ref=8.516,7.549,Sacramento      ,Amer to Sutt Sl ,73137.26,                
 Elev Controlled Gate Stage Diff=,,                ,                ,        ,                ,                ,                ,        ,                
 Elev Controlled Gate=Gates 21-27 ,,,0.02032,0.00508,1.829,0,0, 1 
-Elev Controlled Gate Ref=8.611,7.57,Sacramento      ,Amer to Sutt Sl ,73137.26,                
+Elev Controlled Gate Ref=8.578,7.563,Sacramento      ,Amer to Sutt Sl ,73137.26,                
 Elev Controlled Gate Stage Diff=,,                ,                ,        ,                ,                ,                ,        ,                
 Elev Controlled Gate=Gates 28-34 ,,,0.02032,0.00508,1.829,0,0, 1 
-Elev Controlled Gate Ref=8.687,7.587,Sacramento      ,Amer to Sutt Sl ,73137.26,                
+Elev Controlled Gate Ref=8.643,7.577,Sacramento      ,Amer to Sutt Sl ,73137.26,                
 Elev Controlled Gate Stage Diff=,,                ,                ,        ,                ,                ,                ,        ,                
 Elev Controlled Gate=Gates 35-41 ,,,0.02032,0.00508,1.829,0,0, 1 
-Elev Controlled Gate Ref=8.763,7.603,Sacramento      ,Amer to Sutt Sl ,73137.26,                
+Elev Controlled Gate Ref=8.709,7.591,Sacramento      ,Amer to Sutt Sl ,73137.26,                
 Elev Controlled Gate Stage Diff=,,                ,                ,        ,                ,                ,                ,        ,                
 Elev Controlled Gate=Gates 42-48 ,,,0.02032,0.00508,1.829,0,0, 1 
 Elev Controlled Gate Ref=8.839,7.62,Sacramento      ,Amer to Sutt Sl ,73137.26,                
 Elev Controlled Gate Stage Diff=,,                ,                ,        ,                ,                ,                ,        ,                
-Boundary Location=Elk Slough      ,To Sutter       ,15304.38,        ,                ,                ,                ,                
+Boundary Location=Elk Slough      ,To Sutter       ,15304.38,        ,                ,                ,                ,                                
 Interval=1YEAR
 Flow Hydrograph= 2 
        1       1
@@ -184,72 +236,17 @@ Use Fixed Start Time=False
 Fixed Start Date/Time=,
 Is Critical Boundary=False
 Critical Boundary Flow=
-Boundary Location=                ,                ,        ,        ,                ,Yolo Bypass     ,                ,Rio Vista       
-Interval=1HOUR
-Stage Hydrograph= 0 
-Stage Hydrograph Use Initial Stage=0
-DSS File=15_min all years Rio Vista stage m_NAVD88.dss
-DSS Path=/RIO VISTA/RIO VISTA BRIDGE/STAGE/01SEP1996/15MIN/NAVD_88 (WDL_CDEC)_ MISSING ESTIMATED/
-Use DSS=True
-Use Fixed Start Time=False
-Fixed Start Date/Time=,
-Is Critical Boundary=False
-Critical Boundary Flow=
-Boundary Location=                ,                ,        ,        ,                ,Yolo Bypass     ,                ,Putah Creek     
+Boundary Location=CalhounCut      ,AA              ,2400.371,        ,                ,                ,                ,                                
 Interval=1HOUR
 Flow Hydrograph= 0 
-Flow Hydrograph Slope= 0.00064 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/PUTAH CREEK/2_PUT/FLOW/01OCT1996/1HOUR/ESTIMATED/
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/CALHOUN CUT/CALHOUN/FLOW/01JAN1996/1DAY/ESTIMATED/
 Use DSS=True
 Use Fixed Start Time=False
 Fixed Start Date/Time=,
 Is Critical Boundary=False
 Critical Boundary Flow=
-Boundary Location=                ,                ,        ,        ,                ,Yolo Bypass     ,                ,Willow Slough   
-Interval=1HOUR
-Flow Hydrograph= 0 
-Flow Hydrograph Slope= 0 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/WILLOW SLOUGH BYPASS/2_WSB/FLOW/01OCT1996/1HOUR/ESTIMATED/
-Use DSS=True
-Use Fixed Start Time=False
-Fixed Start Date/Time=,
-Is Critical Boundary=False
-Critical Boundary Flow=
-Boundary Location=                ,                ,        ,        ,                ,Yolo Bypass     ,                ,Cache Creek SB  
-Interval=1HOUR
-Flow Hydrograph= 0 
-Flow Hydrograph Slope= 0 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/CACHE CREEK SETTLING BASIN/2_CCSB_TOTAL/FLOW/01OCT1996/1HOUR/RUN:16-YR_RUN_CCSB_CVFED_TWPOOL/
-Use DSS=True
-Use Fixed Start Time=False
-Fixed Start Date/Time=,
-Is Critical Boundary=False
-Critical Boundary Flow=
-Boundary Location=                ,                ,        ,        ,                ,Yolo Bypass     ,                ,Kinghts Landing 
-Interval=1HOUR
-Flow Hydrograph= 0 
-Flow Hydrograph Slope= 0.00019 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/KNIGHTS LANDING RIDGE CUT/2_KLRC/FLOW/01OCT1996/1HOUR/GAUGED + ESTIMATED/
-Use DSS=True
-Use Fixed Start Time=False
-Fixed Start Date/Time=,
-Is Critical Boundary=False
-Critical Boundary Flow=
-Boundary Location=CalhounCut      ,AA              ,2400.371,        ,                ,                ,                ,                
-Interval=1HOUR
-Flow Hydrograph= 0 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/CALHOUN CUT/3_CCH/FLOW/01OCT1996/1HOUR/ESTIMATED/
-Use DSS=True
-Use Fixed Start Time=False
-Fixed Start Date/Time=,
-Is Critical Boundary=False
-Critical Boundary Flow=
-Boundary Location=HassSlough      ,To Cache        ,4682.563,        ,                ,                ,                ,                
+Boundary Location=HassSlough      ,To Cache        ,4682.563,        ,                ,                ,                ,                                
 Interval=1YEAR
 Flow Hydrograph= 2 
        1       1
@@ -259,187 +256,792 @@ Use Fixed Start Time=False
 Fixed Start Date/Time=,
 Is Critical Boundary=False
 Critical Boundary Flow=
-Boundary Location=HassSlough      ,To Cache        ,3475.33*,        ,                ,                ,                ,                
+Boundary Location=HassSlough      ,To Cache        ,3475.33*,        ,                ,                ,                ,                                
 Interval=1DAY
 Lateral Inflow Hydrograph= 0 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/HAAS SLOUGH/3_HAAS/FLOW/01OCT1996/1HOUR/ESTIMATED/
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/HAAS SLOUGH/HAAS/FLOW/01JAN1996/1DAY/ESTIMATED/
 Use DSS=True
 Use Fixed Start Time=False
 Fixed Start Date/Time=,
 Is Critical Boundary=False
 Critical Boundary Flow=
-Boundary Location=American        ,A               ,22.195  ,        ,                ,                ,                ,                
-Interval=1HOUR
-Flow Hydrograph= 0 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/AMERICAN R/4_AFO/FLOW/01OCT1996/1HOUR/USGS/
+Boundary Location=American        ,A               ,22.195  ,        ,                ,                ,                ,                                
+Interval=15MIN
+Flow Hydrograph= 2977 
+    1110    1130    1110    1100    1100    1100    1100    1110    1110    1100
+    1090    1100    1110    1110    1100    1110    1110    1130    1130    1130
+    1110    1110    1130    1110    1110    1110    1110    1100    1100    1100
+    1100    1090    1080    1080    1080    1080    1090    1110    1100    1090
+    1100    1110    1130    1110    1090    1100    1110    1100    1100    1130
+    1110    1110    1130    1130    1130    1130    1130    1140    1130    1110
+    1110    1100    1130    1110    1130    1100    1110    1110    1110    1100
+    1100    1100    1100    1110    1130    1130    1130    1110    1100    1100
+    1100    1110    1110    1130    1100    1110    1130    1110    1110    1130
+    1100    1080    1090    1110    1100    1090    1090    1100    1100    1090
+    1100    1110    1110    1110    1100    1110    1130    1100    1100    1100
+    1100    1110    1110    1110    1130    1130    1130    1110    1100    1100
+    1100    1110    1090    1100    1100    1130    1100    1090    1130    1140
+    1135    1130    1110    1080    1080    1080    1090    1080    1090    1090
+    1080    1130    1160    1190    1210    1230    1240    1240    1240    1240
+    1240    1240    1240    1240    1240    1240    1240    1240    1240    1240
+    1240    1240    1240    1240    1240    1240    1230    1240    1240    1240
+    1240    1240    1240    1240    1240    1240    1240    1240    1130    1060
+    1160    1160    1170    1160    1160    1180    1190    1190    1220    1230
+    1210    1230    1240    1230    1230    1220    1240    1220    1220    1220
+    1220    1230    1240    1260    1270    1260    1270    1260    1260    1280
+    1290    1270    1270    1230    1240    1260    1230    1240    1220    1230
+    1230    1230    1230    1280    1270    1240    1240    1260    1280    1260
+    1240    1270    1270    1270    1270    1260    1260    1280    1280    1280
+    1280    1260    1260    1280    1290    1280    1280    1280    1270    1270
+    1270    1260    1260    1280    1280    1280    1280    1280    1280    1280
+    1280    1270    1270    1280    1280    1280    1270    1260    1260    1270
+    1270    1270    1270    1280    1280    1270    1280    1270    1260    1260
+    1280    1280    1280    1270    1280    1280    1280    1270    1260    1280
+    1280    1260    1260    1280    1280    1260    1260    1260    1260    1260
+    1260    1260    1270    1270    1260    1280    1260    1260    1260    1260
+    1260    1260    1270    1260    1270    1280    1280    1280    1260    1280
+    1280    1280    1280    1270    1270    1260    1280    1290    1280    1270
+    1270    1260    1260    1260    1260    1260    1290    1290    1290    1290
+    1280    1280    1280    1280    1280    1280    1280    1280    1280    1280
+    1280    1290    1290    1290    1290    1290    1290    1290    1290    1290
+    1290    1290    1290    1290    1280    1280    1280    1280    1280    1290
+    1290    1280    1260    1260    1270    1260    1280    1270    1240    1240
+    1280    1280    1290    1270    1290    1290    1290    1280    1290    1260
+    1260    1280    1290    1280    1270    1280    1280    1270    1280    1270
+    1280    1270    1280    1290    1280    1280    1290    1290    1280    1280
+    1280    1280    1270    1270    1270    1290    1280    1270    1270    1280
+    1270    1270    1270    1270    1270    1280    1260    1280    1290    1270
+    1260    1270    1260    1270    1290    1280    1260    1280    1190    1140
+    1130    1130    1130    1170    1170    1160    1190    1210    1210    1210
+    1240    1240    1240    1210    1240    1240    1240    1240    1240    1200
+    1220    1220    1220    1240    1240    1240    1210    1210    1220    1230
+    1230    1220    1220    1220    1220    1220    1220    1220    1200    1220
+    1240    1230    1230    1230    1220    1220    1220    1220    1210    1220
+    1220    1210    1210    1220    1230    1230    1220    1210    1230    1210
+    1220    1230    1210    1220    1210    1200    1210    1210    1210    1210
+    1210    1200    1230    1240    1260    1220    1240    1220    1210    1200
+    1200    1210    1210    1210    1210    1220    1220    1210    1220    1220
+    1210    1220    1220    1220    1230    1240    1210    1220    1260    1230
+    1240    1220    1230    1230    1210    1210    1230    1200    1210    1200
+    1220    1230    1230    1220    1220    1220    1220    1230    1230    1220
+    1220    1230    1230    1220    1220    1220    1220    1200    1220    1240
+    1230    1210    1230    1230    1210    1220    1220    1220    1210    1210
+    1210    1230    1230    1210    1210    1210    1210    1210    1210    1210
+    1220    1230    1220    1200    1230    1230    1210    1220    1270    1220
+    1190    1220    1220    1210    1210    1210    1200    1180    1210    1210
+    1190    1220    1230    1220    1210    1200    1190    1220    1240    1240
+    1260    1210    1210    1220    1180    1200    1210    1220    1220    1210
+    1210    1200    1200    1210    1200    1190    1230    1220    1210    1220
+    1210    1220    1220    1200    1210    1200    1220    1210    1200    1190
+    1210    1240    1260    1240    1220    1210    1200    1200    1200    1210
+    1210    1260    1240    1230    1230    1260    1260    1220    1220    1230
+    1230    1230    1220    1270    1240    1230    1220    1220    1220    1200
+    1200    1210    1240    1260    1260    1240    1290    1230    1210    1220
+    1240    1240    1230    1210    1230    1220    1220    1200    1230    1260
+    1240    1240    1240    1220    1210    1230    1230    1230    1230    1230
+    1230    1240    1230    1240    1220    1200    1230    1230    1230    1240
+    1230    1210    1220    1230    1220    1200    1220    1230    1230    1240
+    1260    1270    1240    1200    1210    1260    1260    1230    1240    1240
+    1260    1240    1290    1260    1230    1220    1210    1200    1220    1240
+    1240    1230    1230    1230    1230    1230    1230    1230    1230    1230
+    1230    1240    1230    1220    1230    1240    1230    1210    1220    1230
+    1220    1220    1240    1240    1240    1230    1230    1290    1240    1220
+    1240    1240    1240    1260    1240    1210    1220    1240    1290    1210
+    1220    1230    1230    1220    1210    1200    1200    1210    1220    1230
+    1240    1240    1220    1210    1220    1230    1210    1210    1220    1290
+    1240    1220    1210    1220    1220    1230    1230    1230    1220    1210
+    1220    1230    1230    1220    1210    1210    1220    1210    1200    1200
+    1200    1210    1220    1220    1230    1240    1240    1220    1210    1210
+    1210    1210    1210    1220    1240    1260    1260    1240    1220    1230
+    1230    1230    1220    1220    1230    1230    1230    1240    1220    1220
+    1230    1220    1210    1210    1210    1220    1230    1220    1230    1240
+    1230    1220    1210    1210    1220    1220    1230    1240    1230    1210
+    1210    1210    1220    1230    1240    1240    1230    1230    1260    1260
+    1260    1270    1240    1230    1260    1260    1260    1270    1260    1260
+    1240    1230    1240    1260    1240    1260    1260    1240    1230    1240
+    1240    1230    1240    1240    1220    1220    1240    1240    1230    1240
+    1210    1220    1230    1260    1260    1230    1240    1260    1230    1220
+    1290    1270    1230    1230    1240    1220    1210    1230    1230    1230
+    1220    1230    1230    1210    1220    1240    1220    1210    1210    1230
+    1230    1220    1220    1230    1200    1220    1220    1220    1220    1210
+    1260    1270    1260    1260    1230    1230    1220    1220    1240    1230
+    1220    1210    1220    1270    1240    1220    1230    1220    1230    1230
+    1240    1240    1260    1260    1230    1210    1220    1240    1230    1200
+    1210    1220    1220    1220    1230    1230    1230    1230    1240    1220
+    1210    1220    1220    1210    1210    1220    1230    1280    1790    2190
+    2220    2260    3020    3210    3210    3220    3270    3350    3420    3420
+    3420    3420    3440    3460    3500    3470    3500    3490    3500    3490
+    3500    3490    3500    3500    3500    3490    3490    3500    3500    3490
+    3500    3520    3470    3470    3490    3490    3490    3460    3470    3520
+    3500    3520    3500    3500    3490    3500    3500    3520    3500    3470
+    3470    3500    3490    3470    3500    3490    3540    3500    3460    3420
+    3420    3420    3420    3410    3410    3420    3380    3420    3390    3460
+    3390    3440    3410    3410    3410    3380    3410    3410    3540    3700
+    3680    3620    3540    3520    3520    3540    3540    3540    3540    3540
+    3540    3540    3540    3540    3540    3540    3540    3540    3540    3540
+    3540    3540    3540    3540    3540    3540    3540    3540    3540    3540
+    3540    3540    3540    3520    3520    3520    3520    3520    3520    3520
+    3540    3540    3540    3540    3540    3540    3550    3550    3550    3550
+    3550    3550    3550    3550    3550    3550    3540    3550    3540    3540
+    3540    3540    3520    3520    3520    3520    3520    3520    3520    3500
+    3500    3500    3500    3500    3500    3500    3500    3490    3490    3490
+    3490    3490    3490    3490    3490    3490    3490    3490    3490    3490
+    3490    3490    3490    3500    3500    3500    3500    3520    3790    4520
+    4540    4500    5110    5830    5890    5950    6010    4610    3210    5710
+    5970    5970    5970    5970    5970    5970    5950    5950    5950    5950
+    5950    5930    5930    5930    5930    5910    5910    5910    5890    5890
+    5890    5870    5890    5890    5910    5910    5910    5930    5930    5950
+    5970    5970    5970    5970    5970    5970    5990    5990    6010    6010
+    6010    6010    6010    6010    6010    5990    5990    5990    5990    5990
+    5990    5990    5990    5990    5990    5990    5990    5990    5990    5990
+    5990    5990    5990    5990    5990    5990    5990    5990    5990    5990
+    5990    5990    5990    5990    5990    5990    5990    5990    6010    6010
+    6010    6010    6010    6010    6010    6340    6780    6950    6970    7690
+    8000    8040    8380    9620    9930   10100   10100   10100   10200   10200
+   10200   10200   10200   10200   10200   10200   10500   12000   12600   12700
+   13400   15200   15500   15600   15600   15300   15000   14900   14900   14900
+   15000   15000   15000   15000   15000   15000   15000   15000   15000   15000
+   15000   15000   15000   15000   15000   15000   15000   15000   15000   15000
+   15000   15000   15000   15000   15000   15000   15000   15000   15000   15000
+   14900   15000   14900   14900   14900   14900   14900   14900   14900   14900
+   14800   14800   14800   14800   14800   14800   14800   14800   14800   14800
+   14800   14800   14800   14800   14800   14800   14900   15000   15000   15000
+   15000   15000   16100   18300   19600   21800   24500   24900   24900   25500
+   28000   29800   30200   31200   33400   34700   35500   35600   35600   35500
+   35500   35500   35500   35500   35500   35400   35400   35500   35400   35400
+   35500   35500   35500   35500   35600   35600   35600   35600   35600   35600
+   35600   35600   35700   35700   35700   35700   35700   35700   35700   35700
+   35800   35800   35900   35900   35900   35900   36000   36100   36100   36100
+   36100   36100   36100   36100   36100   36100   36100   36100   36100   36100
+   36100   36100   36100   36100   36100   36100   36100   36100   36100   36100
+   36100   36100   36100   36100   36100   36100   36000   35800   35700   35700
+   35700   35800   35800   35800   35800   35800   35800   35800   35800   35800
+   35900   35800   35800   35800   35900   35900   35900   35900   35900   32200
+   30700   30200   30100   30000   30000   30000   30000   30000   30000   30000
+   30100   30000   30000   30000   30000   30000   30000   30000   30000   30100
+   30000   30100   30000   30100   30000   30100   30000   30000   30000   30000
+   30000   30000   30000   30000   30000   30000   30000   30000   30000   30000
+   30000   30000   30000   29900   29900   29900   29900   29900   29900   30000
+   29900   29900   29900   29900   29900   29900   29900   29900   29900   29900
+   29900   29900   29900   29900   29900   29900   29900   29900   29900   29800
+   29900   29900   29900   29900   29800   29800   30000   29400   29500   30300
+   30200   30200   30200   30100   30100   30100   30100   30100   30100   30100
+   30100   30100   30100   30000   30000   30000   30000   30000   29900   30000
+   30000   30000   29400   29500   30900   30600   30400   30400   30300   30300
+   30300   30200   30200   30100   30200   30100   30100   30100   30100   30100
+   30100   30100   30100   30100   30100   30100   30000   30100   30100   30100
+   30000   30100   30000   30000   30000   30000   30000   30000   30000   30000
+   30000   30000   30000   30000   30000   30000   30000   30000   30000   30000
+   30000   30000   30000   30000   30000   30000   29900   30000   30000   30000
+   30000   30000   30000   30000   30000   30000   29900   29900   30000   30000
+   30000   29900   30000   29900   30000   29900   29900   29900   29900   30000
+   29900   29900   30000   30000   29900   29900   29900   29900   29900   29900
+   29900   29900   29900   29900   29900   29900   29900   29900   29900   29900
+   29800   29800   29900   29900   29800   29900   29800   29800   29900   29900
+   29800   29800   29800   29800   29800   29800   29900   29800   29800   29800
+   29800   29800   29800   29800   29900   29800   29800   29800   29800   29800
+   29800   29800   29800   29800   29800   29800   29800   29800   29800   29800
+   29700   29700   29800   29700   29700   29700   29700   29700   29700   29600
+   29700   29700   29600   29600   29700   29600   29600   29600   29600   29600
+   29600   29600   29600   29600   29600   29600   29600   29600   29600   29600
+   29600   29500   26700   24300   24000   24400   24500   24700   25100   25300
+   25400   25400   25300   25300   25200   25200   25100   25100   25100   25000
+   24900   24900   24800   24800   24800   24700   24700   24700   24700   24600
+   24600   24600   24600   24600   24600   24600   24600   24500   24500   24700
+   24600   24500   24500   24500   24500   24700   24800   24800   24800   24700
+   22100   24000   24200   24200   24300   24200   24300   24300   24300   24400
+   24400   24400   24400   24400   24400   24300   24300   24300   24400   24300
+   24400   24300   24400   24300   24400   24300   24400   24400   24400   24400
+   24400   24400   24400   24400   24400   24400   24400   24400   24400   24400
+   24400   24400   24400   24400   24400   24400   22500   20300   19900   19900
+   20000   20000   20200   20400   20300   20300   20400   20500   20700   20500
+   20400   20400   20500   20500   20400   20500   20600   20500   20500   20600
+   20600   20500   19900   20200   20300   20300   20200   20200   20100   20100
+   20100   20100   20100   20100   20100   20100   20100   20100   20200   20100
+   20100   20100   20100   20100   20100   20100   20100   20100   20100   20100
+   20100   20100   20100   20100   20100   20200   20200   20200   20200   20100
+   20200   20200   20200   20100   20200   20200   20200   20200   20200   20200
+   20100   20200   20100   20200   20200   20200   20200   20200   20200   20200
+   20100   20200   20200   20200   20200   20200   20200   20200   20200   20200
+   20200   20100   19700   18900   18700   18600   18600   18600   18500   18500
+   18200   17300   17200   17100   17100   17100   17100   17100   16800   16100
+   16000   16000   16000   16000   15900   15900   15900   15900   15900   15900
+   15900   15900   15900   15900   15900   15900   15900   15900   15900   15900
+   15900   15900   15900   15900   15900   15900   15900   15900   15900   15900
+   15900   15900   15800   15900   15800   15900   15800   15900   15900   15900
+   15800   15800   15800   15800   15700   15700   15700   15700   15600   15700
+   15700   15700   15700   15700   15700   15700   15700   15700   15700   15700
+   15700   15700   15700   15700   15700   15700   15600   15700   15700   15700
+   15700   15700   15700   15700   15700   15700   15700   15700   15600   15000
+   14900   14900   14900   14900   14900   14900   14300   13800   13800   13800
+   13700   13800   13800   13700   13700   12900   12900   12800   12800   12800
+   12800   12800   12800   12800   12800   12800   12800   12800   12800   12800
+   12800   12800   12800   13000   13000   12900   13000   13000   13000   12900
+   13000   13000   13000   13000   13000   13000   13000   13000   12900   13000
+   13000   12900   12900   12900   12900   13000   12900   12900   12900   12900
+   12900   12900   12900   12900   12900   12900   13000   12900   12900   12900
+   12900   12900   12900   12900   12900   12900   12900   12900   12900   12900
+   12900   12900   12900   12900   12900   12900   12900   12900   12900   12900
+   12900   12900   12900   12900   12800   12200   12000   12000   11900   11900
+   11900   11900   11800   11600   11500   11500   11500   11600   11400   11300
+   11300   11400   11300   11100   11100   11100   11000   11000   11000   11000
+   11000   10900   10900   10900   10900   10900   10900   10900   11000   11000
+   10900   10900   11000   11000   11000   11000   11000   11000   11000   11000
+   10900   11000   11000   11000   10900   10900   11000   11000   11000   11000
+   11000   11000   10900   10900   10900   10900   11000   10900   10900   10900
+   10900   10900   10900   10900   10900   10900   10900   11000   10900   10900
+   10900   11000   11000   11000   10900   10900   11000   11000   11000   10900
+   10900   11000   11000   10900   10900   10900   11000   10900   10900   10900
+   10800   10500   10500   10400    9480   10300   10400   10500   10500   10000
+    9930    9930    9930    9930    9960    9960    9960    9500    9360    9360
+    9360    9380    9380    9380    9380    9380    9380    9380    9380    9380
+    8680    9550    9170    9080    9100    9100    9080    9080    9080    9360
+    9310    9310    9340    9240    9170    9170    9150    9170    9480    9530
+    9530    9500    9530    9500    9530    9530    9530    9500    9500    9500
+    9530    9530    9500    9530    9530    9500    9500    9530    9530    9500
+    9500    9500    9530    9550    9530    9530    9500    9500    9530    9530
+    9530    9500    9530    9530    9500    9530    9530    9500    9500    9530
+    9530    9600    9480    9500    9500    9500    9500    9360    9290    9260
+    9260    9290    9310    9290    9310    8940    8910    8940    8910    8940
+    8890    8890    8840    8310    8180    8200    8220    8180    8220    8180
+    8220    8180    8200    8200    8220    8160    8180    8200    8200    8180
+    8200    8220    8200    8200    8200    8200    8200    8200    8200    8200
+    8200    8360    8290    8250    8250    8250    8220    8270    8250    8250
+    8250    8340    8290    8270    8250    8250    8290    8270    8200    8270
+    8540    8380    8340    8340    8340    8340    8340    8360    8340    8360
+    8340    8340    8340    8340    8360    8340    8340    8340    8340    8360
+    8340    8340    8340    8340    8340    8520    8410    8360    8340    8360
+    8360    8340    8380    8200    8020    7980    7980    8180    8130    8130
+    8110    8110    8110    7750    7530    7400    7380    7400    7100    6990
+    7030    7050    7050    7050    7050    7080    7180    7250    7250    7270
+    7290    7270    7250    7250    7250    7230    7270    7270    7250    7250
+    7250    7250    7250    7250    7230    7270    7270    7230    7270    7270
+    7250    7290    7250    7210    7250    7270    7250    7230    7250    7230
+    7270    7270    7270    7250    7230    7270    7250    7250    7230    7230
+    7250    7230    7250    7230    7250    7270    7270    7270    7250    7250
+    7230    7230    7250    7250    7250    7250    7230    7250    7250    7270
+    7250    7250    7250    7250    7250    7270    7230    7230    7140    7030
+    6990    6990    7030    7030    6900    6840    6840    6760    6690    6480
+    6420    6570    6550    6550    6550    6380    6360    6380    6440    6380
+    6400    6400    6380    6440    6400    6400    6420    6460    6420    6420
+    6400    6420    6400    6400    6400    6380    6380    6440    6420    6420
+    6420    6400    6400    6420    6420    6420    6440    6380    6400    6420
+    6440    6440    6380    6400    6440    6440    6440    6420    6440    6440
+    6400    6440    6460    6420    6400    6440    6440    6440    6420    6400
+    6420    6400    6460    6380    6380    6380    6360    6400    6360    6400
+    6360    6380    6320    6380    6360    6340    6300    6320    6340    6340
+    6320    6380    6380    6320    6280    6210    6210    6110    6030    6070
+    6070    6050    5930    5850    5970    5950    5950    5930    5870    5870
+    5730    5610    5590    5570    5570    5550    5590    5570    5670    5710
+    5730    5730    5630    5610    5690    5650    5630    5610    5630    5630
+    5630    5650    5630    5650    5650    5670    5670    5690    5710    5650
+    5670    5650    5630    5650    5670    5670    5690    5690    5670    5650
+    5730    5690    5710    5690    5690    5690    5670    5650    5670    5630
+    5610    5610    5670    5670    5690    5670    5650    5630    5610    5650
+    5690    5670    5610    5670    5630    5630    5630    5630    5570    5630
+    5630    5630    5650    5630    5610    5630    5610    5630    5610    5590
+    5400    5310    5310    5290    5310    5270    5250    5290    5140    5090
+    5050    5050    5070    5050    5070    5070    5030    4980    4980    4980
+    4980    5000    4980    5000    4980    5000    5010    5000    5000    4980
+    5000    5000    5000    5000    4980    5000    5000    5000    4960    4980
+    4980    4980    5000    5010    5010    4980    5000    5010    5050    5030
+    5030    5030    5050    5050    5050    5070    5030    5050    5030    5010
+    5050    4980    5000    5010    5010    5010    5000    5010    5010    5030
+    5000    5010    5030    5050    5010    5010    5010    5000    5000    4980
+    5010    5030    5010    5000    4980    5010    5010    5030    5010    5030
+    5030    5010    5000    5010    5010    5010    5000    5010    5010    5000
+    4960    5010    5050    4980    4980    5000    4980    5000    5000    4980
+    4960    5000    4960    4960    5000    4960    5000    4980    4940    5000
+    4980    4940    4980    4980    4940    4960    4960    4980    4960    4960
+    4960    4960    4980    4960    4980    4960    4980    5010    5000    4960
+    5000    5000    5000    5010    5010    4980    4980    5000    5010    5000
+    5010    5000    5050    5030    5000    5030    5050    5010    5010    5000
+    5010    5030    5010    5010    5030    5010    5000    5010    5030    5010
+    5010    5010    5000    5010    5030    5030    5030    5030    5010    4980
+    4980    4960    4960    5000    5010    5010    5000    5030    4980    4980
+    4980    5000    4960    5010    5000    5000    5000    4980    5000    5010
+    5000    4980    5000    5000    4980    5000    4960    4980    5010    5010
+    4980    5000    5000    5030    4980    5000    5000    5000    5010    4960
+    5010    4980    4980    5000    4960    5010    5000    5000    4870    4850
+    4870    4850    4840    4820    4800    4800    4690    4680    4680    4690
+    4610    4550    4540    4500    4550    4540    4500    4540    4550    4500
+    4500    4500    4500    4500    4540    4500    4520
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/AMERICAN RIVER/AFO/FLOW/01SEP2012/15MIN/USGS/
 Use DSS=True
 Use Fixed Start Time=False
 Fixed Start Date/Time=,
 Is Critical Boundary=False
 Critical Boundary Flow=
-Boundary Location=DeltaCross      ,DCC             ,1071.35 ,        ,                ,                ,                ,                
-Interval=1HOUR
-Flow Hydrograph= 1297 
-       1       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0       0       0       0
-       0       0       0       0       0       0       0
+Boundary Location=DeltaCross      ,DCC             ,1071.35 ,        ,                ,                ,                ,                                
+Interval=1YEAR
+Flow Hydrograph= 2 
+       0       0
 DSS Path=
 Use DSS=False
 Use Fixed Start Time=False
 Fixed Start Date/Time=,
 Is Critical Boundary=False
 Critical Boundary Flow=
-Boundary Location=Georgianna      ,Georg to Sac    ,1718.89 ,        ,                ,                ,                ,                
+Boundary Location=Georgianna      ,Georg to Sac    ,1718.89 ,        ,                ,                ,                ,                                
+Interval=1HOUR
+Flow Hydrograph= 4369 
+       1   -2.65   -6.29   -9.94  -13.58  -17.23  -20.87  -24.52  -28.16  -31.81
+  -35.45   -39.1  -42.74  -46.39  -50.03  -53.68  -57.32  -60.97  -64.61  -68.26
+   -71.9  -75.55  -79.19  -82.84  -86.48  -90.13  -90.13  -90.13  -90.13  -90.13
+  -90.13  -90.13  -90.13  -90.13  -90.13  -90.13  -90.13  -90.13  -90.13  -90.13
+  -90.13  -90.13  -90.13  -90.13  -90.13  -90.13  -90.13  -90.13  -90.13  -85.23
+  -85.23  -85.23  -85.23  -85.23  -85.23  -85.23  -85.23  -85.23  -85.23  -85.23
+  -85.23  -85.23  -85.23  -85.23  -85.23  -85.23  -85.23  -85.23  -85.23  -85.23
+  -85.23  -85.23  -85.23  -81.47  -81.47  -81.47  -81.47  -81.47  -81.47  -81.47
+  -81.47  -81.47  -81.47  -81.47  -81.47  -81.47  -81.47  -81.47  -81.47  -81.47
+  -81.47  -81.47  -81.47  -81.47  -81.47  -81.47  -81.47  -78.83  -78.83  -78.83
+  -78.83  -78.83  -78.83  -78.83  -78.83  -78.83  -78.83  -78.83  -78.83  -78.83
+  -78.83  -78.83  -78.83  -78.83  -78.83  -78.83  -78.83  -78.83  -78.83  -78.83
+  -78.83  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57
+  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57
+  -76.57  -76.57  -76.57  -76.57  -76.57  -75.44  -75.44  -75.44  -75.44  -75.44
+  -75.44  -75.44  -75.44  -75.44  -75.44  -75.44  -75.44  -75.44  -75.44  -75.44
+  -75.44  -75.44  -75.44  -75.44  -75.44  -75.44  -75.44  -75.44  -75.44  -75.07
+  -75.07  -75.07  -75.07  -75.07  -75.07  -75.07  -75.07  -75.07  -75.07  -75.07
+  -75.07  -75.07  -75.07  -75.07  -75.07  -75.07  -75.07  -75.07  -75.07  -75.07
+  -75.07  -75.07  -75.07  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57
+  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57
+  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57  -76.57     -86     -86     -86
+     -86     -86     -86     -86     -86     -86     -86     -86     -86     -86
+     -86     -86     -86     -86     -86     -86     -86     -86     -86     -86
+     -86 -125.93 -125.93 -125.93 -125.93 -125.93 -125.93 -125.93 -125.93 -125.93
+ -125.93 -125.93 -125.93 -125.93 -125.93 -125.93 -125.93 -125.93 -125.93 -125.93
+ -125.93 -125.93 -125.93 -125.93 -125.93 -172.25 -172.25 -172.25 -172.25 -172.25
+ -172.25 -172.25 -172.25 -172.25 -172.25 -172.25 -172.25 -172.25 -172.25 -172.25
+ -172.25 -172.25 -172.25 -172.25 -172.25 -172.25 -172.25 -172.25 -172.25 -182.02
+ -182.02 -182.02 -182.02 -182.02 -182.02 -182.02 -182.02 -182.02 -182.02 -182.02
+ -182.02 -182.02 -182.02 -182.02 -182.02 -182.02 -182.02 -182.02 -182.02 -182.02
+ -182.02 -182.02 -182.02 -185.79 -185.79 -185.79 -185.79 -185.79 -185.79 -185.79
+ -185.79 -185.79 -185.79 -185.79 -185.79 -185.79 -185.79 -185.79 -185.79 -185.79
+ -185.79 -185.79 -185.79 -185.79 -185.79 -185.79 -185.79 -217.05 -217.05 -217.05
+ -217.05 -217.05 -217.05 -217.05 -217.05 -217.05 -217.05 -217.05 -217.05 -217.05
+ -217.05 -217.05 -217.05 -217.05 -217.05 -217.05 -217.05 -217.05 -217.05 -217.05
+ -217.05 -276.94 -276.94 -276.94 -276.94 -276.94 -276.94 -276.94 -276.94 -276.94
+ -276.94 -276.94 -276.94 -276.94 -276.94 -276.94 -276.94 -276.94 -276.94 -276.94
+ -276.94 -276.94 -276.94 -276.94 -276.94 -314.97 -314.97 -314.97 -314.97 -314.97
+ -314.97 -314.97 -314.97 -314.97 -314.97 -314.97 -314.97 -314.97 -314.97 -314.97
+ -314.97 -314.97 -314.97 -314.97 -314.97 -314.97 -314.97 -314.97 -314.97 -331.17
+ -331.17 -331.17 -331.17 -331.17 -331.17 -331.17 -331.17 -331.17 -331.17 -331.17
+ -331.17 -331.17 -331.17 -331.17 -331.17 -331.17 -331.17 -331.17 -331.17 -331.17
+ -331.17 -331.17 -331.17 -327.77 -327.77 -327.77 -327.77 -327.77 -327.77 -327.77
+ -327.77 -327.77 -327.77 -327.77 -327.77 -327.77 -327.77 -327.77 -327.77 -327.77
+ -327.77 -327.77 -327.77 -327.77 -327.77 -327.77 -327.77  -312.7  -312.7  -312.7
+  -312.7  -312.7  -312.7  -312.7  -312.7  -312.7  -312.7  -312.7  -312.7  -312.7
+  -312.7  -312.7  -312.7  -312.7  -312.7  -312.7  -312.7  -312.7  -312.7  -312.7
+  -312.7  -290.5  -290.5  -290.5  -290.5  -290.5  -290.5  -290.5  -290.5  -290.5
+  -290.5  -290.5  -290.5  -290.5  -290.5  -290.5  -290.5  -290.5  -290.5  -290.5
+  -290.5  -290.5  -290.5  -290.5  -290.5 -263.01 -263.01 -263.01 -263.01 -263.01
+ -263.01 -263.01 -263.01 -263.01 -263.01 -263.01 -263.01 -263.01 -263.01 -263.01
+ -263.01 -263.01 -263.01 -263.01 -263.01 -263.01 -263.01 -263.01 -263.01 -233.25
+ -233.25 -233.25 -233.25 -233.25 -233.25 -233.25 -233.25 -233.25 -233.25 -233.25
+ -233.25 -233.25 -233.25 -233.25 -233.25 -233.25 -233.25 -233.25 -233.25 -233.25
+ -233.25 -233.25 -233.25 -207.25 -207.25 -207.25 -207.25 -207.25 -207.25 -207.25
+ -207.25 -207.25 -207.25 -207.25 -207.25 -207.25 -207.25 -207.25 -207.25 -207.25
+ -207.25 -207.25 -207.25 -207.25 -207.25 -207.25 -207.25 -193.32 -193.32 -193.32
+ -193.32 -193.32 -193.32 -193.32 -193.32 -193.32 -193.32 -193.32 -193.32 -193.32
+ -193.32 -193.32 -193.32 -193.32 -193.32 -193.32 -193.32 -193.32 -193.32 -193.32
+ -193.32 -187.32 -187.32 -187.32 -187.32 -187.32 -187.32 -187.32 -187.32 -187.32
+ -187.32 -187.32 -187.32 -187.32 -187.32 -187.32 -187.32 -187.32 -187.32 -187.32
+ -187.32 -187.32 -187.32 -187.32 -187.32 -176.75 -176.75 -176.75 -176.75 -176.75
+ -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -176.75
+ -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -161.69
+ -161.69 -161.69 -161.69 -161.69 -161.69 -161.69 -161.69 -161.69 -161.69 -161.69
+ -161.69 -161.69 -161.69 -161.69 -161.69 -161.69 -161.69 -161.69 -161.69 -161.69
+ -161.69 -161.69 -161.69 -148.52 -148.52 -148.52 -148.52 -148.52 -148.52 -148.52
+ -148.52 -148.52 -148.52 -148.52 -148.52 -148.52 -148.52 -148.52 -148.52 -148.52
+ -148.52 -148.52 -148.52 -148.52 -148.52 -148.52 -148.52 -136.09 -136.09 -136.09
+ -136.09 -136.09 -136.09 -136.09 -136.09 -136.09 -136.09 -136.09 -136.09 -136.09
+ -136.09 -136.09 -136.09 -136.09 -136.09 -136.09 -136.09 -136.09 -136.09 -136.09
+ -136.09 -124.79 -124.79 -124.79 -124.79 -124.79 -124.79 -124.79 -124.79 -124.79
+ -124.79 -124.79 -124.79 -124.79 -124.79 -124.79 -124.79 -124.79 -124.79 -124.79
+ -124.79 -124.79 -124.79 -124.79 -124.79 -116.86 -116.86 -116.86 -116.86 -116.86
+ -116.86 -116.86 -116.86 -116.86 -116.86 -116.86 -116.86 -116.86 -116.86 -116.86
+ -116.86 -116.86 -116.86 -116.86 -116.86 -116.86 -116.86 -116.86 -116.86 -108.23
+ -108.23 -108.23 -108.23 -108.23 -108.23 -108.23 -108.23 -108.23 -108.23 -108.23
+ -108.23 -108.23 -108.23 -108.23 -108.23 -108.23 -108.23 -108.23 -108.23 -108.23
+ -108.23 -108.23 -108.23 -102.56 -102.56 -102.56 -102.56 -102.56 -102.56 -102.56
+ -102.56 -102.56 -102.56 -102.56 -102.56 -102.56 -102.56 -102.56 -102.56 -102.56
+ -102.56 -102.56 -102.56 -102.56 -102.56 -102.56 -102.56 -111.99 -111.99 -111.99
+ -111.99 -111.99 -111.99 -111.99 -111.99 -111.99 -111.99 -111.99 -111.99 -111.99
+ -111.99 -111.99 -111.99 -111.99 -111.99 -111.99 -111.99 -111.99 -111.99 -111.99
+ -111.99 -150.02 -150.02 -150.02 -150.02 -150.02 -150.02 -150.02 -150.02 -150.02
+ -150.02 -150.02 -150.02 -150.02 -150.02 -150.02 -150.02 -150.02 -150.02 -150.02
+ -150.02 -150.02 -150.02 -150.02 -150.02 -208.38 -208.38 -208.38 -208.38 -208.38
+ -208.38 -208.38 -208.38 -208.38 -208.38 -208.38 -208.38 -208.38 -208.38 -208.38
+ -208.38 -208.38 -208.38 -208.38 -208.38 -208.38 -208.38 -208.38 -208.38 -250.94
+ -250.94 -250.94 -250.94 -250.94 -250.94 -250.94 -250.94 -250.94 -250.94 -250.94
+ -250.94 -250.94 -250.94 -250.94 -250.94 -250.94 -250.94 -250.94 -250.94 -250.94
+ -250.94 -250.94 -250.94    -289    -289    -289    -289    -289    -289    -289
+    -289    -289    -289    -289    -289    -289    -289    -289    -289    -289
+    -289    -289    -289    -289    -289    -289    -289  -332.3  -332.3  -332.3
+  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3
+  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3
+  -332.3 -363.19 -363.19 -363.19 -363.19 -363.19 -363.19 -363.19 -363.19 -363.19
+ -363.19 -363.19 -363.19 -363.19 -363.19 -363.19 -363.19 -363.19 -363.19 -363.19
+ -363.19 -363.19 -363.19 -363.19 -363.19 -369.59 -369.59 -369.59 -369.59 -369.59
+ -369.59 -369.59 -369.59 -369.59 -369.59 -369.59 -369.59 -369.59 -369.59 -369.59
+ -369.59 -369.59 -369.59 -369.59 -369.59 -369.59 -369.59 -369.59 -369.59 -360.56
+ -360.56 -360.56 -360.56 -360.56 -360.56 -360.56 -360.56 -360.56 -360.56 -360.56
+ -360.56 -360.56 -360.56 -360.56 -360.56 -360.56 -360.56 -360.56 -360.56 -360.56
+ -360.56 -360.56 -360.56 -347.36 -347.36 -347.36 -347.36 -347.36 -347.36 -347.36
+ -347.36 -347.36 -347.36 -347.36 -347.36 -347.36 -347.36 -347.36 -347.36 -347.36
+ -347.36 -347.36 -347.36 -347.36 -347.36 -347.36 -347.36  -334.2  -334.2  -334.2
+  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2
+  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2
+  -334.2 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53
+ -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53
+ -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53
+ -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53
+ -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -325.53 -319.13
+ -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13
+ -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13
+ -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13
+ -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13
+ -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -319.13 -323.63 -323.63 -323.63
+ -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63
+ -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63
+ -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63
+ -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63
+ -323.63 -323.63 -323.63 -323.63 -323.63 -318.73 -318.73 -318.73 -318.73 -318.73
+ -318.73 -318.73 -318.73 -318.73 -318.73 -318.73 -318.73 -318.73 -318.73 -318.73
+ -318.73 -318.73 -318.73 -318.73 -318.73 -318.73 -318.73 -318.73 -318.73  -309.7
+  -309.7  -309.7  -309.7  -309.7  -309.7  -309.7  -309.7  -309.7  -309.7  -309.7
+  -309.7  -309.7  -309.7  -309.7  -309.7  -309.7  -309.7  -309.7  -309.7  -309.7
+  -309.7  -309.7  -309.7 -305.57 -305.57 -305.57 -305.57 -305.57 -305.57 -305.57
+ -305.57 -305.57 -305.57 -305.57 -305.57 -305.57 -305.57 -305.57 -305.57 -305.57
+ -305.57 -305.57 -305.57 -305.57 -305.57 -305.57 -305.57  -299.9  -299.9  -299.9
+  -299.9  -299.9  -299.9  -299.9  -299.9  -299.9  -299.9  -299.9  -299.9  -299.9
+  -299.9  -299.9  -299.9  -299.9  -299.9  -299.9  -299.9  -299.9  -299.9  -299.9
+  -299.9  -296.9  -296.9  -296.9  -296.9  -296.9  -296.9  -296.9  -296.9  -296.9
+  -296.9  -296.9  -296.9  -296.9  -296.9  -296.9  -296.9  -296.9  -296.9  -296.9
+  -296.9  -296.9  -296.9  -296.9  -296.9 -291.24 -291.24 -291.24 -291.24 -291.24
+ -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24
+ -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24    -289
+    -289    -289    -289    -289    -289    -289    -289    -289    -289    -289
+    -289    -289    -289    -289    -289    -289    -289    -289    -289    -289
+    -289    -289    -289 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47
+ -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47
+ -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -281.07 -281.07 -281.07
+ -281.07 -281.07 -281.07 -281.07 -281.07 -281.07 -281.07 -281.07 -281.07 -281.07
+ -281.07 -281.07 -281.07 -281.07 -281.07 -281.07 -281.07 -281.07 -281.07 -281.07
+ -281.07  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7
+  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7
+  -277.7  -277.7  -277.7  -277.7  -277.7 -272.41 -272.41 -272.41 -272.41 -272.41
+ -272.41 -272.41 -272.41 -272.41 -272.41 -272.41 -272.41 -272.41 -272.41 -272.41
+ -272.41 -272.41 -272.41 -272.41 -272.41 -272.41 -272.41 -272.41 -272.41 -271.67
+ -271.67 -271.67 -271.67 -271.67 -271.67 -271.67 -271.67 -271.67 -271.67 -271.67
+ -271.67 -271.67 -271.67 -271.67 -271.67 -271.67 -271.67 -271.67 -271.67 -271.67
+ -271.67 -271.67 -271.67 -278.07 -278.07 -278.07 -278.07 -278.07 -278.07 -278.07
+ -278.07 -278.07 -278.07 -278.07 -278.07 -278.07 -278.07 -278.07 -278.07 -278.07
+ -278.07 -278.07 -278.07 -278.07 -278.07 -278.07 -278.07 -284.84 -284.84 -284.84
+ -284.84 -284.84 -284.84 -284.84 -284.84 -284.84 -284.84 -284.84 -284.84 -284.84
+ -284.84 -284.84 -284.84 -284.84 -284.84 -284.84 -284.84 -284.84 -284.84 -284.84
+ -284.84 -295.77 -295.77 -295.77 -295.77 -295.77 -295.77 -295.77 -295.77 -295.77
+ -295.77 -295.77 -295.77 -295.77 -295.77 -295.77 -295.77 -295.77 -295.77 -295.77
+ -295.77 -295.77 -295.77 -295.77 -295.77  -313.1  -313.1  -313.1  -313.1  -313.1
+  -313.1  -313.1  -313.1  -313.1  -313.1  -313.1  -313.1  -313.1  -313.1  -313.1
+  -313.1  -313.1  -313.1  -313.1  -313.1  -313.1  -313.1  -313.1  -313.1  -330.8
+  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8
+  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8
+  -330.8  -330.8  -330.8 -361.66 -361.66 -361.66 -361.66 -361.66 -361.66 -361.66
+ -361.66 -361.66 -361.66 -361.66 -361.66 -361.66 -361.66 -361.66 -361.66 -361.66
+ -361.66 -361.66 -361.66 -361.66 -361.66 -361.66 -361.66 -382.02 -382.02 -382.02
+ -382.02 -382.02 -382.02 -382.02 -382.02 -382.02 -382.02 -382.02 -382.02 -382.02
+ -382.02 -382.02 -382.02 -382.02 -382.02 -382.02 -382.02 -382.02 -382.02 -382.02
+ -382.02 -385.79 -385.79 -385.79 -385.79 -385.79 -385.79 -385.79 -385.79 -385.79
+ -385.79 -385.79 -385.79 -385.79 -385.79 -385.79 -385.79 -385.79 -385.79 -385.79
+ -385.79 -385.79 -385.79 -385.79 -385.79 -377.49 -377.49 -377.49 -377.49 -377.49
+ -377.49 -377.49 -377.49 -377.49 -377.49 -377.49 -377.49 -377.49 -377.49 -377.49
+ -377.49 -377.49 -377.49 -377.49 -377.49 -377.49 -377.49 -377.49 -377.49 -368.46
+ -368.46 -368.46 -368.46 -368.46 -368.46 -368.46 -368.46 -368.46 -368.46 -368.46
+ -368.46 -368.46 -368.46 -368.46 -368.46 -368.46 -368.46 -368.46 -368.46 -368.46
+ -368.46 -368.46 -368.46 -368.09 -368.09 -368.09 -368.09 -368.09 -368.09 -368.09
+ -368.09 -368.09 -368.09 -368.09 -368.09 -368.09 -368.09 -368.09 -368.09 -368.09
+ -368.09 -368.09 -368.09 -368.09 -368.09 -368.09 -368.09  -356.4  -356.4  -356.4
+  -356.4  -356.4  -356.4  -356.4  -356.4  -356.4  -356.4  -356.4  -356.4  -356.4
+  -356.4  -356.4  -356.4  -356.4  -356.4  -356.4  -356.4  -356.4  -356.4  -356.4
+  -356.4 -337.57 -337.57 -337.57 -337.57 -337.57 -337.57 -337.57 -337.57 -337.57
+ -337.57 -337.57 -337.57 -337.57 -337.57 -337.57 -337.57 -337.57 -337.57 -337.57
+ -337.57 -337.57 -337.57 -337.57 -337.57 -331.53 -331.53 -331.53 -331.53 -331.53
+ -331.53 -331.53 -331.53 -331.53 -331.53 -331.53 -331.53 -331.53 -331.53 -331.53
+ -331.53 -331.53 -331.53 -331.53 -331.53 -331.53 -331.53 -331.53 -331.53 -332.67
+ -332.67 -332.67 -332.67 -332.67 -332.67 -332.67 -332.67 -332.67 -332.67 -332.67
+ -332.67 -332.67 -332.67 -332.67 -332.67 -332.67 -332.67 -332.67 -332.67 -332.67
+ -332.67 -332.67 -332.67 -333.06 -333.06 -333.06 -333.06 -333.06 -333.06 -333.06
+ -333.06 -333.06 -333.06 -333.06 -333.06 -333.06 -333.06 -333.06 -333.06 -333.06
+ -333.06 -333.06 -333.06 -333.06 -333.06 -333.06 -333.06 -333.43 -333.43 -333.43
+ -333.43 -333.43 -333.43 -333.43 -333.43 -333.43 -333.43 -333.43 -333.43 -333.43
+ -333.43 -333.43 -333.43 -333.43 -333.43 -333.43 -333.43 -333.43 -333.43 -333.43
+ -333.43  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3
+  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3  -332.3
+  -332.3  -332.3  -332.3  -332.3  -332.3 -332.67 -332.67 -332.67 -332.67 -332.67
+ -332.67 -332.67 -332.67 -332.67 -332.67 -332.67 -332.67 -332.67 -332.67 -332.67
+ -332.67 -332.67 -332.67 -332.67 -332.67 -332.67 -332.67 -332.67 -332.67  -334.2
+  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2
+  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2  -334.2
+  -334.2  -334.2  -334.2  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8
+  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8
+  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8  -330.8 -328.16 -328.16 -328.16
+ -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16
+ -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16
+ -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16
+ -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16 -328.16
+ -328.16 -328.16 -328.16 -328.16 -328.16  -324.4  -324.4  -324.4  -324.4  -324.4
+  -324.4  -324.4  -324.4  -324.4  -324.4  -324.4  -324.4  -324.4  -324.4  -324.4
+  -324.4  -324.4  -324.4  -324.4  -324.4  -324.4  -324.4  -324.4  -324.4 -323.63
+ -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63
+ -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63 -323.63
+ -323.63 -323.63 -323.63  -322.5  -322.5  -322.5  -322.5  -322.5  -322.5  -322.5
+  -322.5  -322.5  -322.5  -322.5  -322.5  -322.5  -322.5  -322.5  -322.5  -322.5
+  -322.5  -322.5  -322.5  -322.5  -322.5  -322.5  -322.5 -316.47 -316.47 -316.47
+ -316.47 -316.47 -316.47 -316.47 -316.47 -316.47 -316.47 -316.47 -316.47 -316.47
+ -316.47 -316.47 -316.47 -316.47 -316.47 -316.47 -316.47 -316.47 -316.47 -316.47
+ -316.47 -307.83 -307.83 -307.83 -307.83 -307.83 -307.83 -307.83 -307.83 -307.83
+ -307.83 -307.83 -307.83 -307.83 -307.83 -307.83 -307.83 -307.83 -307.83 -307.83
+ -307.83 -307.83 -307.83 -307.83 -307.83 -302.93 -302.93 -302.93 -302.93 -302.93
+ -302.93 -302.93 -302.93 -302.93 -302.93 -302.93 -302.93 -302.93 -302.93 -302.93
+ -302.93 -302.93 -302.93 -302.93 -302.93 -302.93 -302.93 -302.93 -302.93 -302.54
+ -302.54 -302.54 -302.54 -302.54 -302.54 -302.54 -302.54 -302.54 -302.54 -302.54
+ -302.54 -302.54 -302.54 -302.54 -302.54 -302.54 -302.54 -302.54 -302.54 -302.54
+ -302.54 -302.54 -302.54  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8
+  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8
+  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8 -296.14 -296.14 -296.14
+ -296.14 -296.14 -296.14 -296.14 -296.14 -296.14 -296.14 -296.14 -296.14 -296.14
+ -296.14 -296.14 -296.14 -296.14 -296.14 -296.14 -296.14 -296.14 -296.14 -296.14
+ -296.14 -292.37 -292.37 -292.37 -292.37 -292.37 -292.37 -292.37 -292.37 -292.37
+ -292.37 -292.37 -292.37 -292.37 -292.37 -292.37 -292.37 -292.37 -292.37 -292.37
+ -292.37 -292.37 -292.37 -292.37 -292.37  -285.6  -285.6  -285.6  -285.6  -285.6
+  -285.6  -285.6  -285.6  -285.6  -285.6  -285.6  -285.6  -285.6  -285.6  -285.6
+  -285.6  -285.6  -285.6  -285.6  -285.6  -285.6  -285.6  -285.6  -285.6  -277.7
+  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7
+  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7  -277.7
+  -277.7  -277.7  -277.7 -272.41 -272.41 -272.41 -272.41 -272.41 -272.41 -272.41
+ -272.41 -272.41 -272.41 -272.41 -272.41 -272.41 -272.41 -272.41 -272.41 -272.41
+ -272.41 -272.41 -272.41 -272.41 -272.41 -272.41 -272.41 -267.51 -267.51 -267.51
+ -267.51 -267.51 -267.51 -267.51 -267.51 -267.51 -267.51 -267.51 -267.51 -267.51
+ -267.51 -267.51 -267.51 -267.51 -267.51 -267.51 -267.51 -267.51 -267.51 -267.51
+ -267.51 -265.27 -265.27 -265.27 -265.27 -265.27 -265.27 -265.27 -265.27 -265.27
+ -265.27 -265.27 -265.27 -265.27 -265.27 -265.27 -265.27 -265.27 -265.27 -265.27
+ -265.27 -265.27 -265.27 -265.27 -265.27 -260.74 -260.74 -260.74 -260.74 -260.74
+ -260.74 -260.74 -260.74 -260.74 -260.74 -260.74 -260.74 -260.74 -260.74 -260.74
+ -260.74 -260.74 -260.74 -260.74 -260.74 -260.74 -260.74 -260.74 -260.74 -256.61
+ -256.61 -256.61 -256.61 -256.61 -256.61 -256.61 -256.61 -256.61 -256.61 -256.61
+ -256.61 -256.61 -256.61 -256.61 -256.61 -256.61 -256.61 -256.61 -256.61 -256.61
+ -256.61 -256.61 -256.61 -250.94 -250.94 -250.94 -250.94 -250.94 -250.94 -250.94
+ -250.94 -250.94 -250.94 -250.94 -250.94 -250.94 -250.94 -250.94 -250.94 -250.94
+ -250.94 -250.94 -250.94 -250.94 -250.94 -250.94 -250.94 -245.31 -245.31 -245.31
+ -245.31 -245.31 -245.31 -245.31 -245.31 -245.31 -245.31 -245.31 -245.31 -245.31
+ -245.31 -245.31 -245.31 -245.31 -245.31 -245.31 -245.31 -245.31 -245.31 -245.31
+ -245.31 -234.38 -234.38 -234.38 -234.38 -234.38 -234.38 -234.38 -234.38 -234.38
+ -234.38 -234.38 -234.38 -234.38 -234.38 -234.38 -234.38 -234.38 -234.38 -234.38
+ -234.38 -234.38 -234.38 -234.38 -234.38 -223.84 -223.84 -223.84 -223.84 -223.84
+ -223.84 -223.84 -223.84 -223.84 -223.84 -223.84 -223.84 -223.84 -223.84 -223.84
+ -223.84 -223.84 -223.84 -223.84 -223.84 -223.84 -223.84 -223.84 -223.84 -227.61
+ -227.61 -227.61 -227.61 -227.61 -227.61 -227.61 -227.61 -227.61 -227.61 -227.61
+ -227.61 -227.61 -227.61 -227.61 -227.61 -227.61 -227.61 -227.61 -227.61 -227.61
+ -227.61 -227.61 -227.61 -248.68 -248.68 -248.68 -248.68 -248.68 -248.68 -248.68
+ -248.68 -248.68 -248.68 -248.68 -248.68 -248.68 -248.68 -248.68 -248.68 -248.68
+ -248.68 -248.68 -248.68 -248.68 -248.68 -248.68 -248.68 -270.54 -270.54 -270.54
+ -270.54 -270.54 -270.54 -270.54 -270.54 -270.54 -270.54 -270.54 -270.54 -270.54
+ -270.54 -270.54 -270.54 -270.54 -270.54 -270.54 -270.54 -270.54 -270.54 -270.54
+ -270.54 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94
+ -279.94 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94
+ -279.94 -279.94 -279.94 -279.94 -279.94 -282.97 -282.97 -282.97 -282.97 -282.97
+ -282.97 -282.97 -282.97 -282.97 -282.97 -282.97 -282.97 -282.97 -282.97 -282.97
+ -282.97 -282.97 -282.97 -282.97 -282.97 -282.97 -282.97 -282.97 -282.97 -284.47
+ -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47
+ -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47
+ -284.47 -284.47 -284.47  -284.1  -284.1  -284.1  -284.1  -284.1  -284.1  -284.1
+  -284.1  -284.1  -284.1  -284.1  -284.1  -284.1  -284.1  -284.1  -284.1  -284.1
+  -284.1  -284.1  -284.1  -284.1  -284.1  -284.1  -284.1  -280.7  -280.7  -280.7
+  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7
+  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7
+  -280.7 -282.97 -282.97 -282.97 -282.97 -282.97 -282.97 -282.97 -282.97 -282.97
+ -282.97 -282.97 -282.97 -282.97 -282.97 -282.97 -282.97 -282.97 -282.97 -282.97
+ -282.97 -282.97 -282.97 -282.97 -282.97 -283.34 -283.34 -283.34 -283.34 -283.34
+ -283.34 -283.34 -283.34 -283.34 -283.34 -283.34 -283.34 -283.34 -283.34 -283.34
+ -283.34 -283.34 -283.34 -283.34 -283.34 -283.34 -283.34 -283.34 -283.34 -292.77
+ -292.77 -292.77 -292.77 -292.77 -292.77 -292.77 -292.77 -292.77 -292.77 -292.77
+ -292.77 -292.77 -292.77 -292.77 -292.77 -292.77 -292.77 -292.77 -292.77 -292.77
+ -292.77 -292.77 -292.77 -300.67 -300.67 -300.67 -300.67 -300.67 -300.67 -300.67
+ -300.67 -300.67 -300.67 -300.67 -300.67 -300.67 -300.67 -300.67 -300.67 -300.67
+ -300.67 -300.67 -300.67 -300.67 -300.67 -300.67 -300.67 -287.47 -287.47 -287.47
+ -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -287.47
+ -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -287.47
+ -287.47 -273.17 -273.17 -273.17 -273.17 -273.17 -273.17 -273.17 -273.17 -273.17
+ -273.17 -273.17 -273.17 -273.17 -273.17 -273.17 -273.17 -273.17 -273.17 -273.17
+ -273.17 -273.17 -273.17 -273.17 -273.17 -264.51 -264.51 -264.51 -264.51 -264.51
+ -264.51 -264.51 -264.51 -264.51 -264.51 -264.51 -264.51 -264.51 -264.51 -264.51
+ -264.51 -264.51 -264.51 -264.51 -264.51 -264.51 -264.51 -264.51 -264.51 -249.81
+ -249.81 -249.81 -249.81 -249.81 -249.81 -249.81 -249.81 -249.81 -249.81 -249.81
+ -249.81 -249.81 -249.81 -249.81 -249.81 -249.81 -249.81 -249.81 -249.81 -249.81
+ -249.81 -249.81 -249.81 -234.75 -234.75 -234.75 -234.75 -234.75 -234.75 -234.75
+ -234.75 -234.75 -234.75 -234.75 -234.75 -234.75 -234.75 -234.75 -234.75 -234.75
+ -234.75 -234.75 -234.75 -234.75 -234.75 -234.75 -234.75 -224.58 -224.58 -224.58
+ -224.58 -224.58 -224.58 -224.58 -224.58 -224.58 -224.58 -224.58 -224.58 -224.58
+ -224.58 -224.58 -224.58 -224.58 -224.58 -224.58 -224.58 -224.58 -224.58 -224.58
+ -224.58 -214.05 -214.05 -214.05 -214.05 -214.05 -214.05 -214.05 -214.05 -214.05
+ -214.05 -214.05 -214.05 -214.05 -214.05 -214.05 -214.05 -214.05 -214.05 -214.05
+ -214.05 -214.05 -214.05 -214.05 -214.05 -207.65 -207.65 -207.65 -207.65 -207.65
+ -207.65 -207.65 -207.65 -207.65 -207.65 -207.65 -207.65 -207.65 -207.65 -207.65
+ -207.65 -207.65 -207.65 -207.65 -207.65 -207.65 -207.65 -207.65 -207.65 -213.28
+ -213.28 -213.28 -213.28 -213.28 -213.28 -213.28 -213.28 -213.28 -213.28 -213.28
+ -213.28 -213.28 -213.28 -213.28 -213.28 -213.28 -213.28 -213.28 -213.28 -213.28
+ -213.28 -213.28 -213.28 -236.64 -236.64 -236.64 -236.64 -236.64 -236.64 -236.64
+ -236.64 -236.64 -236.64 -236.64 -236.64 -236.64 -236.64 -236.64 -236.64 -236.64
+ -236.64 -236.64 -236.64 -236.64 -236.64 -236.64 -236.64 -267.14 -267.14 -267.14
+ -267.14 -267.14 -267.14 -267.14 -267.14 -267.14 -267.14 -267.14 -267.14 -267.14
+ -267.14 -267.14 -267.14 -267.14 -267.14 -267.14 -267.14 -267.14 -267.14 -267.14
+ -267.14  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2
+  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2
+  -279.2  -279.2  -279.2  -279.2  -279.2 -280.34 -280.34 -280.34 -280.34 -280.34
+ -280.34 -280.34 -280.34 -280.34 -280.34 -280.34 -280.34 -280.34 -280.34 -280.34
+ -280.34 -280.34 -280.34 -280.34 -280.34 -280.34 -280.34 -280.34 -280.34  -280.7
+  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7
+  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7  -280.7
+  -280.7  -280.7  -280.7  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2
+  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2
+  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2  -279.2 -275.81 -275.81 -275.81
+ -275.81 -275.81 -275.81 -275.81 -275.81 -275.81 -275.81 -275.81 -275.81 -275.81
+ -275.81 -275.81 -275.81 -275.81 -275.81 -275.81 -275.81 -275.81 -275.81 -275.81
+ -275.81 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94
+ -279.94 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94 -279.94
+ -279.94 -279.94 -279.94 -279.94 -279.94 -287.47 -287.47 -287.47 -287.47 -287.47
+ -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -287.47
+ -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -287.47 -291.24
+ -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24
+ -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24
+ -291.24 -291.24 -291.24 -294.27 -294.27 -294.27 -294.27 -294.27 -294.27 -294.27
+ -294.27 -294.27 -294.27 -294.27 -294.27 -294.27 -294.27 -294.27 -294.27 -294.27
+ -294.27 -294.27 -294.27 -294.27 -294.27 -294.27 -294.27 -298.77 -298.77 -298.77
+ -298.77 -298.77 -298.77 -298.77 -298.77 -298.77 -298.77 -298.77 -298.77 -298.77
+ -298.77 -298.77 -298.77 -298.77 -298.77 -298.77 -298.77 -298.77 -298.77 -298.77
+ -298.77  -301.4  -301.4  -301.4  -301.4  -301.4  -301.4  -301.4  -301.4  -301.4
+  -301.4  -301.4  -301.4  -301.4  -301.4  -301.4  -301.4  -301.4  -301.4  -301.4
+  -301.4  -301.4  -301.4  -301.4  -301.4 -304.43 -304.43 -304.43 -304.43 -304.43
+ -304.43 -304.43 -304.43 -304.43 -304.43 -304.43 -304.43 -304.43 -304.43 -304.43
+ -304.43 -304.43 -304.43 -304.43 -304.43 -304.43 -304.43 -304.43 -304.43 -308.57
+ -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -308.57
+ -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -308.57
+ -308.57 -308.57 -308.57 -309.33 -309.33 -309.33 -309.33 -309.33 -309.33 -309.33
+ -309.33 -309.33 -309.33 -309.33 -309.33 -309.33 -309.33 -309.33 -309.33 -309.33
+ -309.33 -309.33 -309.33 -309.33 -309.33 -309.33 -309.33 -310.07 -310.07 -310.07
+ -310.07 -310.07 -310.07 -310.07 -310.07 -310.07 -310.07 -310.07 -310.07 -310.07
+ -310.07 -310.07 -310.07 -310.07 -310.07 -310.07 -310.07 -310.07 -310.07 -310.07
+ -310.07 -308.94 -308.94 -308.94 -308.94 -308.94 -308.94 -308.94 -308.94 -308.94
+ -308.94 -308.94 -308.94 -308.94 -308.94 -308.94 -308.94 -308.94 -308.94 -308.94
+ -308.94 -308.94 -308.94 -308.94 -308.94 -308.57 -308.57 -308.57 -308.57 -308.57
+ -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -308.57
+ -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -308.57 -302.17
+ -302.17 -302.17 -302.17 -302.17 -302.17 -302.17 -302.17 -302.17 -302.17 -302.17
+ -302.17 -302.17 -302.17 -302.17 -302.17 -302.17 -302.17 -302.17 -302.17 -302.17
+ -302.17 -302.17 -302.17 -297.27 -297.27 -297.27 -297.27 -297.27 -297.27 -297.27
+ -297.27 -297.27 -297.27 -297.27 -297.27 -297.27 -297.27 -297.27 -297.27 -297.27
+ -297.27 -297.27 -297.27 -297.27 -297.27 -297.27 -297.27  -300.3  -300.3  -300.3
+  -300.3  -300.3  -300.3  -300.3  -300.3  -300.3  -300.3  -300.3  -300.3  -300.3
+  -300.3  -300.3  -300.3  -300.3  -300.3  -300.3  -300.3  -300.3  -300.3  -300.3
+  -300.3  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8
+  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8  -301.8
+  -301.8  -301.8  -301.8  -301.8  -301.8  -295.4  -295.4  -295.4  -295.4  -295.4
+  -295.4  -295.4  -295.4  -295.4  -295.4  -295.4  -295.4  -295.4  -295.4  -295.4
+  -295.4  -295.4  -295.4  -295.4  -295.4  -295.4  -295.4  -295.4  -295.4 -291.24
+ -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24
+ -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24 -291.24
+ -291.24 -291.24 -291.24 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47
+ -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47
+ -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -284.47 -271.28 -271.28 -271.28
+ -271.28 -271.28 -271.28 -271.28 -271.28 -271.28 -271.28 -271.28 -271.28 -271.28
+ -271.28 -271.28 -271.28 -271.28 -271.28 -271.28 -271.28 -271.28 -271.28 -271.28
+ -271.28 -253.58 -253.58 -253.58 -253.58 -253.58 -253.58 -253.58 -253.58 -253.58
+ -253.58 -253.58 -253.58 -253.58 -253.58 -253.58 -253.58 -253.58 -253.58 -253.58
+ -253.58 -253.58 -253.58 -253.58 -253.58 -232.88 -232.88 -232.88 -232.88 -232.88
+ -232.88 -232.88 -232.88 -232.88 -232.88 -232.88 -232.88 -232.88 -232.88 -232.88
+ -232.88 -232.88 -232.88 -232.88 -232.88 -232.88 -232.88 -232.88 -232.88 -214.42
+ -214.42 -214.42 -214.42 -214.42 -214.42 -214.42 -214.42 -214.42 -214.42 -214.42
+ -214.42 -214.42 -214.42 -214.42 -214.42 -214.42 -214.42 -214.42 -214.42 -214.42
+ -214.42 -214.42 -214.42 -196.35 -196.35 -196.35 -196.35 -196.35 -196.35 -196.35
+ -196.35 -196.35 -196.35 -196.35 -196.35 -196.35 -196.35 -196.35 -196.35 -196.35
+ -196.35 -196.35 -196.35 -196.35 -196.35 -196.35 -196.35 -181.65 -181.65 -181.65
+ -181.65 -181.65 -181.65 -181.65 -181.65 -181.65 -181.65 -181.65 -181.65 -181.65
+ -181.65 -181.65 -181.65 -181.65 -181.65 -181.65 -181.65 -181.65 -181.65 -181.65
+ -181.65 -177.89 -177.89 -177.89 -177.89 -177.89 -177.89 -177.89 -177.89 -177.89
+ -177.89 -177.89 -177.89 -177.89 -177.89 -177.89 -177.89 -177.89 -177.89 -177.89
+ -177.89 -177.89 -177.89 -177.89 -177.89 -192.19 -192.19 -192.19 -192.19 -192.19
+ -192.19 -192.19 -192.19 -192.19 -192.19 -192.19 -192.19 -192.19 -192.19 -192.19
+ -192.19 -192.19 -192.19 -192.19 -192.19 -192.19 -192.19 -192.19 -192.19 -212.91
+ -212.91 -212.91 -212.91 -212.91 -212.91 -212.91 -212.91 -212.91 -212.91 -212.91
+ -212.91 -212.91 -212.91 -212.91 -212.91 -212.91 -212.91 -212.91 -212.91 -212.91
+ -212.91 -212.91 -212.91 -227.21 -227.21 -227.21 -227.21 -227.21 -227.21 -227.21
+ -227.21 -227.21 -227.21 -227.21 -227.21 -227.21 -227.21 -227.21 -227.21 -227.21
+ -227.21 -227.21 -227.21 -227.21 -227.21 -227.21 -227.21 -234.75 -234.75 -234.75
+ -234.75 -234.75 -234.75 -234.75 -234.75 -234.75 -234.75 -234.75 -234.75 -234.75
+ -234.75 -234.75 -234.75 -234.75 -234.75 -234.75 -234.75 -234.75 -234.75 -234.75
+ -234.75 -235.88 -235.88 -235.88 -235.88 -235.88 -235.88 -235.88 -235.88 -235.88
+ -235.88 -235.88 -235.88 -235.88 -235.88 -235.88 -235.88 -235.88 -235.88 -235.88
+ -235.88 -235.88 -235.88 -235.88 -235.88 -231.75 -231.75 -231.75 -231.75 -231.75
+ -231.75 -231.75 -231.75 -231.75 -231.75 -231.75 -231.75 -231.75 -231.75 -231.75
+ -231.75 -231.75 -231.75 -231.75 -231.75 -231.75 -231.75 -231.75 -231.75 -221.95
+ -221.95 -221.95 -221.95 -221.95 -221.95 -221.95 -221.95 -221.95 -221.95 -221.95
+ -221.95 -221.95 -221.95 -221.95 -221.95 -221.95 -221.95 -221.95 -221.95 -221.95
+ -221.95 -221.95 -221.95 -213.28 -213.28 -213.28 -213.28 -213.28 -213.28 -213.28
+ -213.28 -213.28 -213.28 -213.28 -213.28 -213.28 -213.28 -213.28 -213.28 -213.28
+ -213.28 -213.28 -213.28 -213.28 -213.28 -213.28 -213.28 -207.25 -207.25 -207.25
+ -207.25 -207.25 -207.25 -207.25 -207.25 -207.25 -207.25 -207.25 -207.25 -207.25
+ -207.25 -207.25 -207.25 -207.25 -207.25 -207.25 -207.25 -207.25 -207.25 -207.25
+ -207.25 -197.09 -197.09 -197.09 -197.09 -197.09 -197.09 -197.09 -197.09 -197.09
+ -197.09 -197.09 -197.09 -197.09 -197.09 -197.09 -197.09 -197.09 -197.09 -197.09
+ -197.09 -197.09 -197.09 -197.09 -197.09 -183.92 -183.92 -183.92 -183.92 -183.92
+ -183.92 -183.92 -183.92 -183.92 -183.92 -183.92 -183.92 -183.92 -183.92 -183.92
+ -183.92 -183.92 -183.92 -183.92 -183.92 -183.92 -183.92 -183.92 -183.92 -176.75
+ -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -176.75
+ -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -176.75 -176.75
+ -176.75 -176.75 -176.75 -172.25 -172.25 -172.25 -172.25 -172.25 -172.25 -172.25
+ -172.25 -172.25 -172.25 -172.25 -172.25 -172.25 -172.25 -172.25 -172.25 -172.25
+ -172.25 -172.25 -172.25 -172.25 -172.25 -172.25 -172.25 -168.49 -168.49 -168.49
+ -168.49 -168.49 -168.49 -168.49 -168.49 -168.49 -168.49 -168.49 -168.49 -168.49
+ -168.49 -168.49 -168.49 -168.49 -168.49 -168.49 -168.49 -168.49 -168.49 -168.49
+ -168.49 -165.46 -165.46 -165.46 -165.46 -165.46 -165.46 -165.46 -165.46 -165.46
+ -165.46 -165.46 -165.46 -165.46 -165.46 -165.46 -165.46 -165.46 -165.46 -165.46
+ -165.46 -165.46 -165.46 -165.46 -165.46 -162.45 -162.45 -162.45 -162.45 -162.45
+ -162.45 -162.45 -162.45 -162.45 -162.45 -162.45 -162.45 -162.45 -162.45 -162.45
+ -162.45 -162.45 -162.45 -162.45 -162.45 -162.45 -162.45 -162.45 -162.45 -157.19
+ -157.19 -157.19 -157.19 -157.19 -157.19 -157.19 -157.19 -157.19 -157.19 -157.19
+ -157.19 -157.19 -157.19 -157.19 -157.19 -157.19 -157.19 -157.19 -157.19 -157.19
+ -157.19 -157.19 -157.19 -152.66 -152.66 -152.66 -152.66 -152.66 -152.66 -152.66
+ -152.66 -152.66 -152.66 -152.66 -152.66 -152.66 -152.66 -152.66 -152.66 -152.66
+ -152.66 -152.66 -152.66 -152.66 -152.66 -152.66 -152.66 -151.89 -151.89 -151.89
+ -151.89 -151.89 -151.89 -151.89 -151.89 -151.89 -151.89 -151.89 -151.89 -151.89
+ -151.89 -151.89 -151.89 -151.89 -151.89 -151.89 -151.89 -151.89 -151.89 -151.89
+ -151.89 -153.02 -153.02 -153.02 -153.02 -153.02 -153.02 -153.02 -153.02 -153.02
+ -153.02 -153.02 -153.02 -153.02 -153.02 -153.02 -153.02 -153.02 -153.02 -153.02
+ -153.02 -153.02 -153.02 -153.02 -153.02 -154.53 -154.53 -154.53 -154.53 -154.53
+ -154.53 -154.53 -154.53 -154.53 -154.53 -154.53 -154.53 -154.53 -154.53 -154.53
+ -154.53 -154.53 -154.53 -154.53 -154.53 -154.53 -154.53 -154.53 -154.53
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/GEORGIANA SLOUGH AND DELTA CROSS CANAL (EXPORTS)/5_XGEO/FLOW/01OCT2012/1HOUR/DAYFLOW/
+Use DSS=False
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=FeatherRiver    ,A               ,46191.73,        ,                ,                ,                ,                                
 Interval=1HOUR
 Flow Hydrograph= 0 
-Flow Hydrograph QMult=-1 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/DELTA CROSS CHANNEL + GEORGIANA SL. (EXPORTS)/5_XGEO/FLOW/01OCT1996/1HOUR/DWR_DAYFLOW/
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/FEA_COMBINED/FEA_COM/FLOW/01JAN2012/1DAY/ESTIMATED/
 Use DSS=True
 Use Fixed Start Time=False
 Fixed Start Date/Time=,
 Is Critical Boundary=False
 Critical Boundary Flow=
-Boundary Location=FeatherRiver    ,A               ,46191.73,        ,                ,                ,                ,                
-Interval=1HOUR
-Flow Hydrograph= 0 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/FEATHER R/4_FEA/FLOW/01OCT1996/1HOUR/ESTIMATED/
-Use DSS=True
-Use Fixed Start Time=False
-Fixed Start Date/Time=,
-Is Critical Boundary=False
-Critical Boundary Flow=
-Boundary Location=DeepWaterShipCha,A               ,34556.03,        ,                ,                ,                ,                
+Boundary Location=DeepWaterShipCha,A               ,34556.03,        ,                ,                ,                ,                                
 Interval=1YEAR
 Flow Hydrograph= 2 
        1       1
@@ -449,22 +1051,95 @@ Use Fixed Start Time=False
 Fixed Start Date/Time=,
 Is Critical Boundary=False
 Critical Boundary Flow=
-Boundary Location=                ,                ,        ,        ,                ,Sutter Bypass   ,                ,Tisdale         
+Boundary Location=Cache Slough    ,US to Hass      ,2275.979,        ,                ,                ,                ,                                
 Interval=1HOUR
 Flow Hydrograph= 0 
-Flow Hydrograph Slope= 0.00019 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/SUTTER BYPASS/4_SUT/FLOW/01OCT1996/1HOUR/EST./
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/CACHE SLOUGH/CACHE SLOUGH/FLOW/01JAN1996/1DAY/ESTIMATED/
 Use DSS=True
 Use Fixed Start Time=False
 Fixed Start Date/Time=,
 Is Critical Boundary=False
 Critical Boundary Flow=
-Boundary Location=Cache Slough    ,US to Hass      ,2275.979,        ,                ,                ,                ,                
+Boundary Location=                ,                ,        ,        ,                ,Yolo Bypass     ,                ,Rio Vista                       
+Interval=1HOUR
+Stage Hydrograph= 0 
+Stage Hydrograph Use Initial Stage=-1
+Stage Hydrograph TW Check=0
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/RIO VISTA BRIDGE/RVB/STAGE/01SEP2012/1HOUR/DWR/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Yolo Bypass     ,                ,Putah Creek                     
 Interval=1HOUR
 Flow Hydrograph= 0 
-DSS File=LT_BCs_daily_hourly_mean_flows_m.dss
-DSS Path=/CACHE SLOUGH/CAC/FLOW/01JAN1996/1DAY/ESTIMATED/
+Stage Hydrograph TW Check=0
+Flow Hydrograph Slope= 0.00064 
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/PUTAH CREEK/PUT/FLOW/01JAN2012/1DAY/CALCULATED/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Yolo Bypass     ,                ,Willow Slough                   
+Interval=1HOUR
+Flow Hydrograph= 0 
+Stage Hydrograph TW Check=0
+Flow Hydrograph Slope= 0.0001 
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/WILLOW SLOUGH/WSB/FLOW/01JAN2012/1DAY/CALCULATED/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Yolo Bypass     ,                ,Cache Creek SB                  
+Interval=1HOUR
+Flow Hydrograph= 0 
+Stage Hydrograph TW Check=0
+Flow Hydrograph Slope= 0.0001 
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/CACHE CREEK SETTLING BASIN/CCSB/FLOW/01JAN2012/1DAY/USGS/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Yolo Bypass     ,                ,Kinghts Landing                 
+Interval=1HOUR
+Flow Hydrograph= 0 
+Stage Hydrograph TW Check=0
+Flow Hydrograph Slope= 0.00019 
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/KNIGHTS LANDING OUTFALL GATES/KLOG/FLOW/01JAN2015/1DAY/DWR/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Sutter Bypass   ,                ,Tisdale                         
+Interval=1HOUR
+Flow Hydrograph= 0 
+Stage Hydrograph TW Check=0
+Flow Hydrograph Slope= 0.00019 
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/SUTTER BYPASS/SUTTER/FLOW/01JAN2012/1DAY/GAUGED+ESTIMATED/
+Use DSS=True
+Use Fixed Start Time=False
+Fixed Start Date/Time=,
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Sutter Bypass   ,                ,Feather                         
+Interval=1HOUR
+Flow Hydrograph= 0 
+Stage Hydrograph TW Check=0
+Flow Hydrograph Slope= 0.00127 
+DSS File=18-1011_YBM_LT_BCs_WY2013-2017_2018-1126_SI.dss
+DSS Path=/FEA_COMBINED/4_FEA/FLOW/01OCT2012/1HOUR/ESTIMATED/
 Use DSS=True
 Use Fixed Start Time=False
 Fixed Start Date/Time=,
